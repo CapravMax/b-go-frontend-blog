@@ -1,0 +1,10 @@
+.form {
+    padding: 10px 0 0;
+    margin: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+    & > * ~ button {
+        margin-top: 1.5em;
+        cursor: pointer;
+    }
+}
