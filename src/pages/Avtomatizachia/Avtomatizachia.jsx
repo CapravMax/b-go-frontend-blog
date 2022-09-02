@@ -19,7 +19,7 @@ const Avtomatizachia = ({offsetY}) => {
                     </>
                 )}
             </div>
-            <div className={clsx(styles['block__img'], styles['img1'])} style={{transform: `translateY(-${offsetY * 0.3}px)`}}>
+            <div className={clsx(styles['block__img'], styles['img1'])}>
                 {!loading &&  (
                         <img src={data.page.automatization_content.block1.image.sourceUrl} alt="" />
                 )} 

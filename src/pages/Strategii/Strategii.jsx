@@ -17,7 +17,7 @@ const Strategii = () => {
                 {!loading && (
                     <>
                         <h2>{data.page.strategy_content.block1.title}</h2>
-                        <p><p>{data.page.strategy_content.block1.paragraph1}</p></p>
+                        <p>{data.page.strategy_content.block1.paragraph1}</p>
                     </>
                 )}
                 

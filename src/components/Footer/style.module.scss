@@ -4,29 +4,27 @@
     grid-template-columns: 2fr 7fr 4fr;
     align-items: center;
     height: 90px;
-    background: #6A7B8E;
 }
 .footer__logo {
-    font-family: 'Gotham Pro L', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2.5rem;
-    line-height: 1;
-    color: #F4F7FA;
+    text-decoration: none;
+    background-image: url("../../assets/img/logo.svg");
+    width: 120px;
+    height: 60px;
 }
 .contacts {
-    font-family: 'Gotham Pro L', sans-serif;
+    ffont-family: "Gotham Pro L", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1;
-    color: #F4F7FA;
-    display: inline-flex;
+    color: #6A7B8E;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: self-end;
     overflow: hidden;
-    
-    height: 3rem;
+    height: 4rem;
+    min-width: max-content;
     & > * {
         padding: 0 0.5em;
         font-family: 'Gotham Pro L';
@@ -67,7 +65,7 @@
         line-height: 13px;
         display: inline-flex;
         align-items: baseline;
-        color: #F4F7FA;
+        color: #6A7B8E;
         background: inherit;
         z-index: 1;
         overflow: hidden;
@@ -76,7 +74,7 @@
             font-weight: inherit;
             font-size: inherit;
             text-decoration: none;
-            color: inherit;
+            color: #6A7B8E;
         }
 
         &:hover {
@@ -100,7 +98,6 @@
 
     &__sublist {
         margin: 0;
-        padding: 0;
         padding: .4em .2em;
         position: absolute;
         list-style: none;
@@ -110,7 +107,7 @@
         visibility: hidden;
         transition: 0.2s;
         background-color: inherit;
-        color: #F4F7FA;
+        color: #6A7B8E;
         bottom: 1.2em;
         z-index: -1;
     }

@@ -5,7 +5,7 @@ import {MAIN} from 'GraphQL/Queries'
 import clsx from 'clsx';
 import styles from'./style.module.scss'
 
-const Main = ({offsetY}) => {
+const Main = () => {
     const {error, loading, data} = useQuery(MAIN)
     useEffect(() => {
     },[data]);

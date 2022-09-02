@@ -15,7 +15,7 @@
         line-height: 1.2;
     }
     & h3 + h3 {
-        margin: 0;
+        margin: 0 3rem;
     }
     & h3 {
         line-height: 57px;
@@ -71,15 +71,16 @@
 }
 .content3 {
     justify-content: flex-start;
-    margin-left: 7rem;
+    margin:0 7rem;
     & h3 {
         line-height: 1;
 
         & + p {
             padding: .5em 0;
+            text-align: justify;
         }
     }
 }
 .content2 {
-       margin-left: 7rem;
+       margin: 0 7rem;
 }

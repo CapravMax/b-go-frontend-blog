@@ -12,7 +12,11 @@ const Footer = () => {
     // console.log(data.menu.menuItems.nodes)
     return (
         <div className={clsx(styles['footer'])}>
-            <div className={clsx(styles['footer__logo'])}>b-go</div>
+
+                <a href="#">
+                    <div className={clsx(styles['footer__logo'])}></div>
+                </a>
+
             <ul className={clsx(styles['navbar__list'])}>
                 {
                     !loading && data.menu.menuItems.nodes.map(({label, path, childItems}, i) => 

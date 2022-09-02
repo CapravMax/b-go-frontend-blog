@@ -118,33 +118,33 @@ body {
 }
 
 h2 {
-    margin: 0;
+    margin: 3rem;
     font-family: 'Gotham Pro L', sans-serif;
     font-weight: 300;
     font-size: 3.12rem;
     line-height: 100%;
     color: #6A7B8E;
-    text-align: center;
+    text-align: left;
     & ~ h2,
     & ~ h3 {
-        margin: 1.25px 0;
+        margin: 1.25px 3rem;
     }
 }
 h3 {
-    margin: 0;
+    margin: 3rem;
     font-family: 'Gotham Pro L', sans-serif;
     font-weight: 300;
     font-size: 2.375rem;
     line-height: 100%;
     color: #6A7B8E;
-    text-align: center;
+    text-align: left;
     & ~ h2,
     & ~ h3 {
         margin: 25px 0;
     }
 }
 h4 {
-    margin: 0;
+    margin: 0 3rem;
     font-family: 'Gotham Pro L', sans-serif;
     font-weight: 300;
     font-size: 1.875rem;
@@ -156,12 +156,13 @@ h4 {
     }
 }
 p {
-    margin: 0rem;
+    margin: 0 3rem;
     font-family: 'Gotham Pro L', sans-serif;
     font-weight: 300;
     font-size: 1.125rem;
     line-height: 1.5;
     color: #6A7B8E;
+    text-align: justify;
     & ~ p {
         margin-top: 1.5rem;
     }

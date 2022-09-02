@@ -9,7 +9,9 @@ const Header = () => {
 
     return (
         <div className={clsx(styles['header'])}>
-            <a href="#" className={clsx(styles['header__logo'])}>b-go</a>
+            <a href="#" className={clsx(styles['header__logo'])}>
+                <img src="/src/assets/img " alt=""/>
+            </a>
             <NavBar toggle={toggle} isOpen={isOpen} />
             <div className={clsx(styles['menu'])}><span className={clsx(styles['menu__text'], {[styles['open']]: isOpen})} onClick={toggle}>menu</span><span className={clsx(styles['menu__btn'],{[styles['open']]: isOpen})} onClick={toggle}></span></div>
         </div>

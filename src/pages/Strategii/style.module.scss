@@ -6,8 +6,8 @@
     box-sizing: border-box;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
-    grid-template-rows: repeat(auto-fit,min-content);
+    grid-template-columns: repeat(auto-fit, minmax(720px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
 
     & .form {
         // padding-left: 128px;
@@ -39,8 +39,7 @@
         justify-content: center;
     }
     &__list {
-        margin: 1.5rem 0 0;
-        padding: 0;
+        padding: 0 3rem;
         list-style: none;
         font-family: 'Gotham Pro L', sans-serif;
         font-style: normal;
@@ -50,11 +49,11 @@
         color: #6A7B8E;
     }
     &__img {
-    display: flex;
         justify-self: center;
-    max-width: 496px;    
-    border-radius: 30px;
-    background-color: #F4F7FA;
+        align-self: center;
+        max-width: 496px;
+        border-radius: 30px;
+        background-color: #F4F7FA;
         & img {
             max-width: 100%;
             max-height: 536px;
@@ -65,7 +64,7 @@
 }
 
 .content1 {
-    padding: 0.3em 1em 0 .6em;
+    text-align: justify;
 
     & p {
         padding-top: 0.3em;
@@ -81,7 +80,7 @@
 }
 .content3 {
     // padding: 15.5em 1em 0 8.77em;
-    padding: 0 1em 0 8.77em;
+    padding: 0 1em 0 0;
 
     // justify-content: flex-start;
     
@@ -93,18 +92,17 @@
     }
 }
 .content4 {
-    margin: 2rem;
-    padding: 0 0 0 0.6em;
+    margin: 1.5em 0 0.1em;
+
 
     & h4 {
-        margin: 1.5em 0 .1em;
+        margin: 1.5em 3rem .1em;
     }
     & p ~ p {
         margin-top: .8rem;
     }
 }
 .content5 {
-    padding: 5em 0 0 8.7em;
     max-width: 35em;
 
     & p ~ p {
@@ -112,8 +110,6 @@
     }
 }
 .content6 {
-    margin: 2rem;
-    padding: 0 0 0 0.6em;
 
     & p {
         max-width: 39em;
@@ -133,7 +129,7 @@
     }
 }
 .content7 {
-    padding: 6.1em 0 0 8.8em;
+
 
     & p {
         margin-top: 0;

@@ -9,7 +9,7 @@ import Input from 'components/Input';
 import clsx from 'clsx'
 import styles from './style.module.scss'
 
-const CreateProduct = ({offsetY}) => {
+const CreateProduct = ({}) => {
     const {error, loading, data} = useQuery(PRODUCT)
     useEffect(()=>{}, [data])
     return (

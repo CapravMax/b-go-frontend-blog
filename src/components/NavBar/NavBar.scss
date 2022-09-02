@@ -52,7 +52,7 @@
             font-weight: inherit;
             font-size: inherit;
             text-decoration: none;
-            color: inherit;
+            color: #6A7B8E;
         }
         @for $i from 1 through 6 {
             &:nth-child(#{7 - $i}) {
