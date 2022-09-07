@@ -52,7 +52,7 @@
             font-weight: inherit;
             font-size: inherit;
             text-decoration: none;
-            color: #6A7B8E;
+            color: black;
         }
         @for $i from 1 through 6 {
             &:nth-child(#{7 - $i}) {
@@ -89,15 +89,18 @@
         overflow: hidden;
         visibility: hidden;
         transition: 0.2s;
-        background-color: #F4F7FA;
+        opacity: 1;
     }
     &__subitem {
         position: relative;
         padding: 5px 2px;
-        width: 10em;
+        width: 13rem;
         transition: .7s;
-        height: 1em;
+        height: 1rem;
         overflow: hidden;
+
+
+
         & a {
             position: absolute;
             top: -100%;
