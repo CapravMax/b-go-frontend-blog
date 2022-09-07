@@ -127,7 +127,25 @@ export const MAIN = gql`
     }
   }
 `;
-
+export const ANTICRISIS = gql`
+page(id: "cG9zdDoxMjg2OA==") {
+    anticrisisConsalt {
+              block1 {
+          list1
+          list2
+        }
+        form {
+          title4
+        }
+        title1
+        title2
+        pictureAnticrisis {
+          sourceUrl
+        }
+      }
+    }
+  }
+`;
 export const ANALITIKA = gql`
   query AnaliticsPage {
     page(id: "cG9zdDoxMjI5Mw==") {
@@ -407,6 +425,27 @@ query ProductPage {
     }
   }
 }`
+
+export const ANTICRISIS= gql`
+query AnticrisisPage {
+  page(id: "cG9zdDoxMjg2OA==") {
+    anticrisisConsalt {
+              block1 {
+          list1
+          list2
+        }
+        form {
+          title4
+        }
+        title1
+        title2
+        pictureAnticrisis {
+          sourceUrl
+        }
+      }
+    }
+  }`
+
 
 export const PARTNER = gql`
 query PartnershipPage {

@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div className={clsx(styles['header'])}>
-            <a href="#" className={clsx(styles['header__logo'])}>
+            <a href="../../pages/Main/Main.jsx" className={clsx(styles['header__logo'])}>
                 <img src="/src/assets/img " alt=""/>
             </a>
             <NavBar toggle={toggle} isOpen={isOpen} />
