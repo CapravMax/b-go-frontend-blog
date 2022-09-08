@@ -12,9 +12,8 @@ import Strategii from 'pages/Strategii';
 import Personal from 'pages/Personal';
 import Komanda from 'pages/Komanda';
 import Avtomatizachia from 'pages/Avtomatizachia';
-
+import Anticrisis from "./pages/Anticrisis";
 import CreateProduct from 'pages/CreateProduct';
-
 import "./App.scss";
 
 
@@ -39,6 +38,7 @@ function App() {
           </Route>
           <Route path="blog/:id" element={<Post offsetY={offsetY}/>} />
           <Route path="zemlya" element={<Zemlya offsetY={offsetY} />} />
+          <Route path="anticrisis" element={<Anticrisis offsetY={offsetY} /> } />}
           <Route path="partnyor" element={<Partnyor offsetY={offsetY} />} />
           <Route path="personal" element={<Personal offsetY={offsetY} />} />
           <Route path="strategii" element={<Strategii offsetY={offsetY} />} />

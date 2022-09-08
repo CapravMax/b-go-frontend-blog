@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import { useQuery } from '@apollo/client';
-import {ANTICRISIS} from 'GraphQL/Queries';
+import {ANTICRISIS} from 'GraphQL/Queries'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
@@ -9,7 +9,7 @@ import clsx from 'clsx'
 import styles from './style.module.scss';
 
 const Anticrisis = () => {
-    const {error, loading, data} = useQuery(АNTICRISIS);
+    const {error, loading, data} = useQuery(PODKLYUCH)
     
 const [name, setName] = useState('')
     const [contact, setContact] = useState('')

@@ -20,7 +20,7 @@ query MainMenuQuery {
       phone
     }
   }
-}`
+}`;
 
 export const LOAD = gql`
   query BlogQuery {
@@ -35,20 +35,35 @@ export const LOAD = gql`
       }
     }
   }
+}
 `;
 
 export const MAIN = gql`
   query MainPage {
     page(id: "cG9zdDoxMjE4Mw==") {
-      content(format: RENDERED)
-      title
       content_on_main {
+      block1 {
+        group1 {
+          list1
+          list2
+          list3
+          list4
+          title1
+        }
+        group2 {
+          title2
+        }
+        image {
+          sourceUrl
+        }
+      }
+      block2 {
         service1 {
           description
-          title
           image {
             sourceUrl
           }
+          title
         }
         service2 {
           description
@@ -66,10 +81,10 @@ export const MAIN = gql`
         }
         service4 {
           description
-          title
           image {
             sourceUrl
           }
+          title
         }
         service5 {
           description
@@ -79,8 +94,8 @@ export const MAIN = gql`
           }
         }
         service6 {
-          title
           description
+          title
           image {
             sourceUrl
           }
@@ -93,35 +108,62 @@ export const MAIN = gql`
           }
         }
         service8 {
-          title
           description
-          image {
-            sourceUrl
-          }
-        }
-        block1 {
-          paragraph1
-          paragraph2
-          paragraph3
-          subtitle
           title
           image {
             sourceUrl
           }
         }
-        block2 {
-          paragraph1
-          paragraph2
-          list
-          paragraph3
-          image {
-            sourceUrl
-          }
+      }
+      block3 {
+        title3
+        group3 {
+          list5
+          subtitle1
         }
-        block3 {
-          title
-          paragraph1
-          paragraph2
+        group4 {
+          list6
+          subtitle2
+        }
+      }
+      block4 {
+        list7
+        paragraph1
+        paragraph2
+        title3
+        image {
+          sourceUrl
+        }
+      }
+      block5 {
+        group5 {
+          paragraph3
+          subtitle2
+        }
+        group6 {
+          paragraph4
+          subtitle3
+        }
+        group7 {
+          paragraph5
+          subtitle4
+        }
+        title4
+      }
+      block6 {
+        title4
+        group8 {
+          description6
+          description7
+          description8
+          description9
+          subtitle4
+          subtitle5
+          subtitle6
+          subtitle7
+        }
+        group9 {
+          title8
         }
       }
     }
@@ -183,6 +225,35 @@ export const ANALITIKA = gql`
     }
   }
 `;
+export const ANTICRISIS = gql`
+query anticrisisConsalt{
+page(id: "cG9zdDoxMjg2OA==") {
+      anticrisisConsalt {
+      block1 {
+        list1
+        list2
+      }
+      form {
+        title4
+      }
+      title1
+      title2
+      pictureAnticrisis {
+        sourceUrl
+      }
+      block2 {
+        element1
+        element2
+        element3
+        element4
+        element5
+        paragraf1
+        title3
+      }
+    }
+  }
+  }
+`
 
 export const EARTH = gql`
 query EarthPage {

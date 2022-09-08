@@ -1,3 +1,3 @@
-import Anticrisis from './Anticrisis';
+import Anticrisis from './Anticrisis'
 
 export default Anticrisis
