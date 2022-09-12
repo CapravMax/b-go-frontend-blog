@@ -34,14 +34,12 @@ export const LOAD = gql`
         }
       }
     }
-  }
-}
-`;
+  }`;
 
 export const MAIN = gql`
-  query MainPage {
-    page(id: "cG9zdDoxMjE4Mw==") {
-      content_on_main {
+  query Main {
+  page(id: "cG9zdDoxMjE4Mw==") {
+    content_on_main {
       block1 {
         group1 {
           list1
@@ -60,10 +58,10 @@ export const MAIN = gql`
       block2 {
         service1 {
           description
+          title
           image {
             sourceUrl
           }
-          title
         }
         service2 {
           description
@@ -81,10 +79,10 @@ export const MAIN = gql`
         }
         service4 {
           description
+          title
           image {
             sourceUrl
           }
-          title
         }
         service5 {
           description
@@ -95,10 +93,10 @@ export const MAIN = gql`
         }
         service6 {
           description
-          title
           image {
             sourceUrl
           }
+          title
         }
         service7 {
           description
@@ -168,26 +166,33 @@ export const MAIN = gql`
       }
     }
   }
-`;
+}`;
+
 export const ANTICRISIS = gql`
+ query Anticrisis {
 page(id: "cG9zdDoxMjg2OA==") {
     anticrisisConsalt {
-              block1 {
-          list1
-          list2
-        }
-        form {
-          title4
-        }
-        title1
+      block1 {
+        list1
         title2
-        pictureAnticrisis {
-          sourceUrl
-        }
       }
+      block2 {
+        list1
+        paragraf1
+        title3
+      }
+      form {
+        title4
+      }
+      pictureAnticrisis {
+        sourceUrl
+      }
+      title1
     }
-  }
-`;
+    }
+ }`;
+
+
 export const ANALITIKA = gql`
   query AnaliticsPage {
     page(id: "cG9zdDoxMjI5Mw==") {
@@ -225,35 +230,6 @@ export const ANALITIKA = gql`
     }
   }
 `;
-export const ANTICRISIS = gql`
-query anticrisisConsalt{
-page(id: "cG9zdDoxMjg2OA==") {
-      anticrisisConsalt {
-      block1 {
-        list1
-        list2
-      }
-      form {
-        title4
-      }
-      title1
-      title2
-      pictureAnticrisis {
-        sourceUrl
-      }
-      block2 {
-        element1
-        element2
-        element3
-        element4
-        element5
-        paragraf1
-        title3
-      }
-    }
-  }
-  }
-`
 
 export const EARTH = gql`
 query EarthPage {
@@ -269,8 +245,7 @@ query EarthPage {
         }
     }
   }
-}`
-
+}`;
 export const PODKLYUCH = gql`
 query TurnKeyPage {
   page(id: "cG9zdDoxMjMzOQ==") {
@@ -299,8 +274,7 @@ query TurnKeyPage {
       }
     }
   }
-}`
-
+}`;
 export const STRATEGII= gql`
 query StrategyPage {
   page(id: "cG9zdDoxMjM2Mw==") {
@@ -360,8 +334,7 @@ query StrategyPage {
       }
     }
   }
-}`
-
+}`;
 export const STAFF= gql`
 query StaffPage {
   page(id: "cG9zdDoxMjQxMw==") {
@@ -417,8 +390,7 @@ query StaffPage {
       }
     }
   }
-}`
-
+}`;
 export const AUTOMATIZATION= gql`
 query AutomatizationPage {
   page(id: "cG9zdDoxMjQ1NA==") {
@@ -449,8 +421,7 @@ query AutomatizationPage {
       }
     }
   }
-}`
-
+}`;
 export const PRODUCT= gql`
 query ProductPage {
   page(id: "cG9zdDoxMjQ3OQ==") {
@@ -495,28 +466,7 @@ query ProductPage {
       }
     }
   }
-}`
-
-export const ANTICRISIS= gql`
-query AnticrisisPage {
-  page(id: "cG9zdDoxMjg2OA==") {
-    anticrisisConsalt {
-              block1 {
-          list1
-          list2
-        }
-        form {
-          title4
-        }
-        title1
-        title2
-        pictureAnticrisis {
-          sourceUrl
-        }
-      }
-    }
-  }`
-
+}`;
 
 export const PARTNER = gql`
 query PartnershipPage {
@@ -534,8 +484,7 @@ query PartnershipPage {
       }
     }
   }
-}`
-
+}`;
 export const TEAM = gql`
 query TeamPageQuery {
   page(id: "cG9zdDoxMjU5NQ==") {
@@ -567,8 +516,7 @@ query TeamPageQuery {
       }
     }
   }
-}`
-
+}`;
 export const BLOG = gql`
 query BlogPageQuery {
   page(id: "cG9zdDoxMjgwMQ==") {
@@ -593,8 +541,7 @@ query BlogPageQuery {
       }
     }
   }
-}`
-
+}`;
 export const POST = gql`
 query SingleBlogQuery($id: ID = ""){
   post(id: $id) {
@@ -618,5 +565,4 @@ query SingleBlogQuery($id: ID = ""){
       }
     }
   }
-}`
-
+}`;

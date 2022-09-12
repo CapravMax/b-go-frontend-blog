@@ -16,11 +16,7 @@
 }
 
 
-.content1,
-.content2, 
-.content3 {
 
-}
 .content3 {
     padding-left: 1rem;
     max-width: 33rem;
@@ -60,7 +56,7 @@
         & img {
             max-width: 100%;
             max-height: 536px;
-            box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 15%);
+            box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
             border-radius: 30px;
         }
     }
@@ -87,28 +83,28 @@
         grid-template-columns: 1fr;
 
         &--1 { 
-            background: url('../../assets/img/1.jpg')
+            background: url('../../assets/img/main/1.jpg')
         }
         &--2 { 
-            background: url('../../assets/img/2.jpg')
+            background: url('../../assets/img/main/2.jpg')
         }
         &--3 { 
-            background: url('../../assets/img/3.jpg')
+            background: url('../../assets/img/main/3.jpg')
         }
         &--4 { 
-            background: url('../../assets/img/4.jpg')
+            background: url('../../assets/img/main/4.jpg')
         }
         &--5 { 
-            background: url('../../assets/img/5.jpg')
+            background: url('../../assets/img/main/5.jpg')
         }
         &--6 { 
-            background: url('../../assets/img/6.jpg')
+            background: url('../../assets/img/main/6.jpg')
         }
         &--7 { 
-            background: url('../../assets/img/7.jpg')
+            background: url('../../assets/img/main/7.jpg')
         }
         &--8 { 
-            background: url('../../assets/img/8.jpg')
+            background: url('../../assets/img/main/8.jpg')
         }
     }
     &__title {
