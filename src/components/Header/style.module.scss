@@ -1,9 +1,9 @@
 .header {
-    padding:0 240px;
+    padding:50px 252px 210px 252px;
     display: grid;
     grid-template-columns: 2fr 11fr 1fr;
     align-items: center;
-    height: 250px;
+    height: max-content;
 }
 .header__logo {
     text-decoration:none;
