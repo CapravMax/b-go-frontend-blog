@@ -20,7 +20,8 @@ const [name, setName] = useState('')
     },[data]);
     return (
         <div className={clsx(styles['anticrisis'])}>
-            <div className={clsx(styles['anticrisis__title1'], styles['title1'])}>
+            <div className={clsx(styles['anticrisis__block1'])}>
+            <div className={clsx(styles['anticrisis__title1'])}>
                 {!loading && (
                     <>
                         <h2>{data.page.anticrisisConsalt.title1}</h2>
@@ -28,27 +29,31 @@ const [name, setName] = useState('')
                 )}
             </div>
 
-            <div className={clsx(styles['anticrisis__img'], styles['img1'])} >
+            <div className={clsx(styles['anticrisis__image'])} >
                 {!loading &&  (
                     <img src={data.page.anticrisisConsalt.pictureAnticrisis.sourceUrl} alt="" />
                 )}
             </div>
+        </div>
 
-            <div className={clsx(styles['anticrisis__block1'], styles['block1'])}>
+            <div className={clsx(styles['anticrisis__block2'])}>
                 {!loading && (
                     <>
                         <h2>{data.page.anticrisisConsalt.block1.title2}</h2>
-                        {data.page.anticrisisConsalt.block1.list1.split('\n').map((x, key) => <h3 key={key}>{x}</h3>)}
+                        <ul className={clsx(styles['anticrisis__block2__list'])}>
+                            {data.page.anticrisisConsalt.block1.list1.split('\n').map((x, i)=><li key={i}>{x}</li>)}
+                        </ul>
 
                     </>
                 )}
             </div>
 
-            <div className={clsx(styles['anticrisis__block2'], styles['block2'])}>
+            <div className={clsx(styles['anticrisis__block3'])}>
+                <div className={clsx(styles['anticrisis__block3__group'])}>
                 {!loading && (
                     <>
                         <h3>{data.page.anticrisisConsalt.block2.title3}</h3>
-                        <ul className={clsx(styles['block__list'])}>
+                        <ul className={clsx(styles['anticrisis__block3__group__list'])}>
                             {data.page.anticrisisConsalt.block2.list1.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
                         <p>{data.page.anticrisisConsalt.block2.paragraf1}</p>
@@ -56,19 +61,21 @@ const [name, setName] = useState('')
                     </>
                 )}
             </div>
-
-            <div className={clsx(styles['anticrisis__form'], styles['form'])}>
-                {!loading && (
-                    <>
-                        <h3>{data.page.anticrisisConsalt.form.title4}</h3>
-                        <Form className={clsx(styles['form'])}>
-                            <Input value={name} onChange={changeName} placeholder='Имя'/>
-                            <Input value={contact} onChange={changeContact} placeholder='Контакт' />
-                            <Button>Отправить</Button>
-                        </Form>
-                    </>
-                )}
+                <div className={clsx(styles['anticrisis__block3__form'], styles['form'])}>
+                    {!loading && (
+                        <>
+                            <h3>{data.page.anticrisisConsalt.form.title4}</h3>
+                            <Form className={clsx(styles['form'])}>
+                                <Input value={name} onChange={changeName} placeholder='Имя'/>
+                                <Input value={contact} onChange={changeContact} placeholder='Контакт' />
+                                <Button>Отправить</Button>
+                            </Form>
+                        </>
+                    )}
+                </div>
             </div>
+
+
         </div>
     );
 };
