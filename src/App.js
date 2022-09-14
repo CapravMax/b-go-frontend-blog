@@ -14,7 +14,7 @@ import Komanda from 'pages/Komanda';
 import Avtomatizachia from 'pages/Avtomatizachia';
 import Anticrisis from "./pages/Anticrisis";
 import CreateProduct from 'pages/CreateProduct';
-import Contact from 'pages/Contact';
+import Contacts from "./pages/Contacts";
 import "./App.scss";
 
 
@@ -47,6 +47,7 @@ function App() {
           <Route path="analitika" element={<Analitika offsetY={offsetY} />} />
           <Route path="avtomatizaciya" element={<Avtomatizachia offsetY={offsetY} />} />
           <Route path="produkt" element={<CreateProduct offsetY={offsetY} />} />
+          <Route path="contact" element={<Contacts offsetY={offsetY} /> } />}
           <Route path="*" element={<Main offsetY={offsetY}/>} />
         </Routes>
       </Layaut>

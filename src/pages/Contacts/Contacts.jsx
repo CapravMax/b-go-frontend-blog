@@ -7,16 +7,16 @@ import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
 
-const Contact = () => {
+const Contacts = () => {
     const {error, loading, data} = useQuery(CONTACT)
     useEffect(() => {
     }, [data]);
 
     return (
-        <>
-            <main className={clsx(styles['contact'])}>
-                <div className={clsx(styles['contact__block1'])}>
 
+            <div className={clsx(styles['contact'])}>
+                <div className={clsx(styles['contact__block1'])}>
+                    <div className={clsx(styles['contact__block1__group'])}>
                             {!loading && (
                                 <>
                                     <h5>{data.page.contact.block1.group.title1}</h5>
@@ -31,11 +31,11 @@ const Contact = () => {
                                 </>
                             )}
                         </div>
-
-                    <div className={clsx(styles['contact__form'])}>
+                    </div>
+                    <div className={clsx(styles['contact__block1__form'])}>
                         {!loading && (
                             <>
-                                <h5>{data.page.content_on_main.block1.form.subtitle5}</h5>
+                                <h5>{data.page.contact.block1.form.subtitle5}</h5>
                             </>
                         )}
                                 <Form>
@@ -47,10 +47,10 @@ const Contact = () => {
 
                     </div>
 
-            </main>
-        </>
+            </div>
+
     )
 };
 
 
-export default Contact;
+export default Contacts;

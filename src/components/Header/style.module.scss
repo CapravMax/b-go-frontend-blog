@@ -1,9 +1,10 @@
 .header {
-    padding:50px 252px 210px 252px;
-    display: grid;
-    grid-template-columns: 2fr 11fr 1fr;
+    margin:50px 5rem 50px 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    height: max-content;
+
 }
 .header__logo {
     text-decoration:none;
