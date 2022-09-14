@@ -14,6 +14,7 @@ import Komanda from 'pages/Komanda';
 import Avtomatizachia from 'pages/Avtomatizachia';
 import Anticrisis from "./pages/Anticrisis";
 import CreateProduct from 'pages/CreateProduct';
+import Contact from 'pages/Contact';
 import "./App.scss";
 
 

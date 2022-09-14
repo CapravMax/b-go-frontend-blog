@@ -275,6 +275,7 @@ query TurnKeyPage {
     }
   }
 }`;
+
 export const STRATEGII= gql`
 query StrategyPage {
   page(id: "cG9zdDoxMjM2Mw==") {
@@ -335,6 +336,7 @@ query StrategyPage {
     }
   }
 }`;
+
 export const STAFF= gql`
 query StaffPage {
   page(id: "cG9zdDoxMjQxMw==") {
@@ -391,6 +393,7 @@ query StaffPage {
     }
   }
 }`;
+
 export const AUTOMATIZATION= gql`
 query AutomatizationPage {
   page(id: "cG9zdDoxMjQ1NA==") {
@@ -422,6 +425,7 @@ query AutomatizationPage {
     }
   }
 }`;
+
 export const PRODUCT= gql`
 query ProductPage {
   page(id: "cG9zdDoxMjQ3OQ==") {
@@ -468,6 +472,31 @@ query ProductPage {
   }
 }`;
 
+export const CONTACT = gql`
+query Contact {
+  page(id: "cG9zdDo4NTc=") {
+    contact {
+      block1 {
+        group {
+          title1
+          subtitle4
+          subtitle3
+          subtitle2
+          subtitle1
+          paragraph4
+          paragraph3
+          paragraph2
+          paragraph1
+          
+        }
+        form {
+          subtitle5
+        }
+      }
+    }
+  }
+}`;
+
 export const PARTNER = gql`
 query PartnershipPage {
   page(id: "cG9zdDoxMjUxMQ==") {
@@ -485,6 +514,7 @@ query PartnershipPage {
     }
   }
 }`;
+
 export const TEAM = gql`
 query TeamPageQuery {
   page(id: "cG9zdDoxMjU5NQ==") {
@@ -517,6 +547,7 @@ query TeamPageQuery {
     }
   }
 }`;
+
 export const BLOG = gql`
 query BlogPageQuery {
   page(id: "cG9zdDoxMjgwMQ==") {
@@ -542,6 +573,7 @@ query BlogPageQuery {
     }
   }
 }`;
+
 export const POST = gql`
 query SingleBlogQuery($id: ID = ""){
   post(id: $id) {
