@@ -6,6 +6,7 @@ import styles from'./style.module.scss'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
+import Preloader from "../Preloader";
 
 const Main = () => {
     const {error, loading, data} = useQuery(MAIN)
