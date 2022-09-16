@@ -16,6 +16,7 @@ import Anticrisis from "./pages/Anticrisis";
 import CreateProduct from 'pages/CreateProduct';
 import Contacts from "./pages/Contacts";
 import "./App.scss";
+import NotFound from "./pages/NotFound";
 
 
 
@@ -48,9 +49,13 @@ function App() {
           <Route path="avtomatizaciya" element={<Avtomatizachia offsetY={offsetY} />} />
           <Route path="produkt" element={<CreateProduct offsetY={offsetY} />} />
           <Route path="contact" element={<Contacts offsetY={offsetY} /> } />}
-          <Route path="*" element={<Main offsetY={offsetY}/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </Layaut>
+</Layaut>
+
+
+
+
     </>
   );
 }

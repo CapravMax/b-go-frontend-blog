@@ -6,7 +6,6 @@ import styles from'./style.module.scss'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
-import Preloader from "../Preloader";
 
 const Main = () => {
     const {error, loading, data} = useQuery(MAIN)
@@ -106,31 +105,37 @@ const Main = () => {
                 </div>
 
 
-                <div className={clsx(styles['main__block3'], styles['block3'])}>
+                <div className={clsx(styles['main__block3'])}>
                     {!loading && (
                         <>
                             <h3>{data.page.content_on_main.block3.title3}</h3>
 
                         </>
                     )}
-                    <div className={clsx(styles['block3__group3'])}>
+                    <div className={clsx(styles['main__block3__group3'])}>
                         {!loading && (
                             <>
+                                <div className={clsx(styles['main__block3__group3__image1'])}>
                                 <h3>{data.page.content_on_main.block3.group3.subtitle1}</h3>
-                                <ul className={clsx(styles['group3__list'])}>
+                            </div>
+
+                                <ul className={clsx(styles['main__block3__group3__list'])}>
                                     {data.page.content_on_main.block3.group3.list5.split('\n').map((x, i) => <li
                                         key={i}><span>{x}</span></li>)}
                                 </ul>
+
                             </>
                         )}
                     </div>
 
 
-                    <div className={clsx(styles['block3__group4'])}>
+                    <div className={clsx(styles['main__block3__group4'])}>
                         {!loading && (
                             <>
+                                <div className={clsx(styles['main__block3__group4__image2'])}>
                                 <h3>{data.page.content_on_main.block3.group4.subtitle2}</h3>
-                                <ul className={clsx(styles['group4__list'])}>
+                            </div>
+                                <ul className={clsx(styles['main__block3__group4__list'])}>
                                     {data.page.content_on_main.block3.group4.list6.split('\n').map((x, i) => <li
                                         key={i}><span>{x}</span></li>)}
                                 </ul>

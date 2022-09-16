@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 import './style.css';
 
 
@@ -34,3 +34,6 @@ export default class Preloader extends Component{
 
 }
 ;
+
+export default Preloader
+*/

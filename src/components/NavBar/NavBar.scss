@@ -1,12 +1,13 @@
 .logo {
     padding: 25px 21px;
-    font-family: 'Gotham Pro L';
+    font-family: 'Gotham Pro L', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 35px;
     line-height: 33px;
 }
 .navigation {
+    margin-left: auto;
     min-width: content-box;
     display: flex;
     justify-content: flex-end;
@@ -37,7 +38,7 @@
         }
     }
     &__item {
-        font-family: 'Gotham Pro L';
+        font-family: 'Gotham Pro L',sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -48,7 +49,7 @@
         transform: translateY(-50px);
         transition: all 1s linear;
         & a {
-            font-family: 'Gotham Pro L';
+            font-family: 'Gotham Pro L',sans-serif;
             font-weight: inherit;
             font-size: inherit;
             text-decoration: none;

@@ -135,8 +135,7 @@
         padding: 50px 0;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
-        grid-template-rows: repeat(2, minmax(510px, 1fr));
-        gap: 1rem;
+        gap: 3px;
 
 
         &__wrap {
@@ -235,29 +234,34 @@
         justify-content: space-between;
 
 
-        .block3__group3 {
-            &__h3 {
-                font-family: 'Gotham Pro', sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 38px;
-                line-height: 100%;
-                color: #3C3C3C;
-            }
-
+        &__group3 {
             background: #FFFFFF no-repeat bottom left url("../../assets/img/main/build.svg");
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
             height: 510px;
-            width: 1420px;
+            width: 95vw;
+            min-width: 320px;
             box-shadow: 10px 14px 20px rgba(191, 192, 207, 0.16);
             border-radius: 20px;
             margin-bottom: 20px;
+            &__image1 {
 
-            .group3__list {
-                max-width: 820px;
+
+                &__h3 {
+                    font-family: 'Gotham Pro', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 38px;
+                    line-height: 100%;
+                    color: #3C3C3C;
+                }
+            }
+
+
+            &__list {
+                max-width: 50vw;
                 font-family: 'Gotham Pro', sans-serif;
                 font-style: normal;
                 font-weight: 400;
@@ -276,7 +280,21 @@
             }
         }
 
-        .block3__group4 {
+        &__group4 {
+            background: #FFFFFF no-repeat bottom left url("../../assets/img/main/body.svg");
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 510px;
+            width: 95vw;
+            min-width: 320px;
+            box-shadow: 10px 14px 20px rgba(191, 192, 207, 0.16);
+            border-radius: 20px;
+
+            &__image2 {
+
+            }
             &__h3 {
                 font-family: 'Gotham Pro', sans-serif;
                 font-style: normal;
@@ -287,23 +305,16 @@
 
             }
 
-            background: #FFFFFF no-repeat bottom left url("../../assets/img/main/body.svg");
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            height: 510px;
-            width: 1420px;
-            box-shadow: 10px 14px 20px rgba(191, 192, 207, 0.16);
-            border-radius: 20px;
 
-            .group4__list {
-                max-width: 820px;
+
+
+            &__list {
                 font-family: 'Gotham Pro', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 26px;
                 line-height: 130%;
+                max-width: 50vw;
 
                 & li {
                     color: #0F76E8;
