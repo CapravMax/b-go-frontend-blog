@@ -1,7 +1,6 @@
 import {useId, useEffect, useState} from 'react';
 import {useQuery} from '@apollo/client'
 import {ROUTES} from 'GraphQL/Queries'
-
 import { Link } from "react-router-dom";
 import './NavBar.scss'
 import clsx from "clsx";

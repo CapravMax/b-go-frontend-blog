@@ -29,7 +29,7 @@ const [name, setName] = useState('')
                 )}
             </div>
 
-            <div className={clsx(styles['anticrisis__image'])} >
+            <div className={clsx(styles['anticrisis__block1__image'])} >
                 {!loading &&  (
                     <img src={data.page.anticrisisConsalt.pictureAnticrisis.sourceUrl} alt="" />
                 )}

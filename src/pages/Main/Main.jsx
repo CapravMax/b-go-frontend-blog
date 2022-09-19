@@ -13,7 +13,7 @@ const Main = () => {
     }, [data]);
 
     return (
-        <>
+
             <main className={clsx(styles['main'])}>
                 <div className={clsx(styles['main__block1'])}>
                     <div className={clsx(styles['main__block1__lines'])}>
@@ -107,62 +107,60 @@ const Main = () => {
 
                 <div className={clsx(styles['main__block3'])}>
                     {!loading && (
-                        <>
+
                             <h3>{data.page.content_on_main.block3.title3}</h3>
 
-                        </>
+
                     )}
                     <div className={clsx(styles['main__block3__group3'])}>
                         {!loading && (
                             <>
-                                <div className={clsx(styles['main__block3__group3__image1'])}>
+
                                 <h3>{data.page.content_on_main.block3.group3.subtitle1}</h3>
-                            </div>
+
 
                                 <ul className={clsx(styles['main__block3__group3__list'])}>
                                     {data.page.content_on_main.block3.group3.list5.split('\n').map((x, i) => <li
                                         key={i}><span>{x}</span></li>)}
                                 </ul>
-
                             </>
                         )}
                     </div>
 
-
                     <div className={clsx(styles['main__block3__group4'])}>
                         {!loading && (
                             <>
-                                <div className={clsx(styles['main__block3__group4__image2'])}>
                                 <h3>{data.page.content_on_main.block3.group4.subtitle2}</h3>
-                            </div>
                                 <ul className={clsx(styles['main__block3__group4__list'])}>
                                     {data.page.content_on_main.block3.group4.list6.split('\n').map((x, i) => <li
                                         key={i}><span>{x}</span></li>)}
                                 </ul>
                             </>
                         )}
+
                     </div>
                 </div>
 
-                <div className={clsx(styles['main__block4'], styles['block4'])}>
+                <div className={clsx(styles['main__block4'])}>
                     <div className={clsx(styles['main__block4__content'])}>
                     {!loading && (
                         <>
                             <h2>{data.page.content_on_main.block4.title3}</h2>
                             <p>{data.page.content_on_main.block4.paragraph1}</p>
-                            <ul className={clsx(styles['block4__list'])}>
+                            <ul className={clsx(styles['main__block4__content__list'])}>
                                 {data.page.content_on_main.block4.list7.split('\n').map((x, i) => <li key={i}>{x}</li>)}
                             </ul>
-                            <p>{data.page.content_on_main.block4.paragraph2}</p>
-
+                            <p className={clsx(styles['after_list'])}>{data.page.content_on_main.block4.paragraph2}</p>
                         </>
+
                     )}
                         </div>
+
                     <div className={clsx(styles['main__block4__image'])}>
                         {!loading && (
-                            <>
+
                             <img src={data.page.content_on_main.block4.image.sourceUrl} alt=""/>
-                            </>
+
                         )}
                 </div>
 
@@ -171,9 +169,9 @@ const Main = () => {
 
                 <div className={clsx(styles['main__block5'])}>
                     {!loading && (
-                        <>
+
                             <h2>{data.page.content_on_main.block5.title4}</h2>
-                        </>
+
                     )}
                     <div className={clsx(styles['main__block5__groups'])}>
                     <div className={clsx(styles['main__block5__groups__group5'])}>
@@ -199,17 +197,17 @@ const Main = () => {
                             <>
                                 <h4>{data.page.content_on_main.block5.group7.subtitle4}</h4>
                                 <p>{data.page.content_on_main.block5.group7.paragraph5}</p>
-
                             </>
+
                         )}
                     </div>
                 </div>
             </div>
 
 
-                <div className={clsx(styles['main__block6'], styles['block6'])}>
+                <div className={clsx(styles['main__block6'])}>
                     {!loading && (
-                        <>
+                       <>
                             <h3>{data.page.content_on_main.block6.title4}</h3>
                         </>
                     )}
@@ -245,12 +243,12 @@ const Main = () => {
 
 
                     </div>
-                </div>
-                </div>
 
+                    </div>
+                </div>
 
             </main>
-        </>
+
     )
 };
 

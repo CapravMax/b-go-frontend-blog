@@ -42,7 +42,7 @@ $areas: a, b, c, d, e, f, g, h;
     .card {
         &__item {
             padding: 24px;
-            font-family: 'Gotham Pro L';
+            font-family: 'Gotham Pro L', sans-serif;
             font-style: normal;
             font-weight: 300;
             font-size: 45px;
@@ -58,7 +58,7 @@ $areas: a, b, c, d, e, f, g, h;
             }
 
             & a {
-                font-family: 'Gotham Pro L';
+                font-family: 'Gotham Pro L',sans-serif;
                 font-weight: inherit;
                 font-size: inherit;
                 text-decoration: none;

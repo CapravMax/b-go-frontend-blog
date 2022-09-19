@@ -13,9 +13,9 @@ const Footer = () => {
     return (
         <div className={clsx(styles['footer'])}>
 
-                <a href="#">
+                <Link to="/">
                     <div className={clsx(styles['footer__logo'])}></div>
-                </a>
+                </Link>
 
             <ul className={clsx(styles['navbar__list'])}>
                 {
