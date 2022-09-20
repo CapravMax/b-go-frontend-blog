@@ -1,0 +1,36 @@
+.no_page_content {
+	font-family: Gotham Pro;
+	font-size: 260px;
+	font-weight: 400;
+	line-height: 260px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #6a7b8e;
+}
+.no_page_txt {
+	font-family: Gotham Pro;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 50px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #6a7b8e;
+}
+.no_page_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 44px;
+	height: 43px;
+	width: 221px;
+	border: 1px solid #6a7b8e;
+	border-radius: 5px;
+	padding: 8px 18px 8px 16px;
+	a {
+		font-family: Gotham Pro;
+		font-size: 18px;
+		font-weight: 400;
+		text-decoration: none;
+		color: #6a7b8e;
+	}
+}
