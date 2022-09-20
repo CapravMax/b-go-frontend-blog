@@ -133,7 +133,8 @@
         margin: 0 3vw;
         padding: 50px 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(477px, 1fr));
+        grid-row-gap: 40px;
         justify-items: center;
 
 
@@ -147,8 +148,9 @@
             &__item {
 
                 &--1 {
-                    background: no-repeat center url('../../assets/img/main/1.jpg');
-                    width: 480px;
+                    background: no-repeat center url('../../assets/img/main/1.jpg') ;
+                    background-size: cover;
+                    width:  480px;
                     height: 490px;
                 }
 

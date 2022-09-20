@@ -28,51 +28,47 @@ const Analitika = () => {
     },[data]);
     return (
         <div className={clsx(styles['analitika'])}>
-            <div className={clsx(styles['block__content'], styles['content1'])}>
+            <div className={clsx(styles['analitika__block'])}>
                 {!loading && (
                     <>
                         <h2>{data.page.analytics_content.block1.title}</h2>
                         <h3>{data.page.analytics_content.block1.subtitle}</h3>
-                        <div className={clsx(styles['slider-container'])}>
+                        <div className={clsx(styles['analitika__block__group'])}>
+                        <div className={clsx(styles['analitika__block__group__slider_container'])}>
                             <SwiperWrapStyle >
-                                <Swiper
-                                    direction={"vertical"}
-                                    pagination={{
-                                    
-                                    clickable: true,
-                                    }}
-                                    modules={[Pagination]}
-                                    className="mySwiper"
-                                >
-                                    {Object.entries(data.page.analytics_content.block1.slider).filter(key => /slide/.test(key)).map(([_, value], key) => <SwiperSlide key={key}><p dangerouslySetInnerHTML={{
-                                        __html: value
-                                    }}/></SwiperSlide>)}
+                                <Swiper direction={"vertical"} pagination={{clickable: true}} modules={[Pagination]} className="analitika__block__slider_container__mySwiper">
+                                    {Object.entries(data.page.analytics_content.block1.slider).filter(key => /slide/.test(key)).map(([_, value], key) =>
+                                        <SwiperSlide key={key}><p dangerouslySetInnerHTML={{__html: value }}/>
+                                        </SwiperSlide>)}
                                 </Swiper>
                             </SwiperWrapStyle>
-                            
+
+
+
                         </div>
+                            <div className={clsx(styles['analitika__block__group__image1'])} >
+                                {!loading &&  (
+                                    <img src={data.page.analytics_content.block1.image.sourceUrl} alt="" />
+                                )}
+                            </div>
+                        </div>
+
                     </>
                 )}
                 
             </div>
-            <div 
-                className={clsx(styles['block__img'], styles['img1'])} 
 
-            >
-                {!loading &&  (
-                        <img src={data.page.analytics_content.block1.image.sourceUrl} alt="" />
-                )}
-            </div>
 
-            <div 
-                className={clsx(styles['block__img'], styles['img2'])} 
-            >
+            <div  className={clsx(styles['analitika__content'])} >
                 {!loading &&  (
+                    <div className={clsx(styles['analitika__content__image2'])}>
                         <img src={data.page.analytics_content.form.image.sourceUrl} alt="" />
+                    </div>
                 )}
-            </div>
 
-            <div className={clsx(styles['block__content'], styles['content2'])}>
+
+
+            <div className={clsx(styles['analitika__content__form'])}>
                 {!loading && (
                     <>
                         <h4>{data.page.analytics_content.form.title}</h4>
@@ -85,6 +81,7 @@ const Analitika = () => {
                         </Form>
                     </>
                 )}
+            </div>
             </div>
 
         </div>

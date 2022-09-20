@@ -1,110 +1,124 @@
 .analitika {
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(720px, 1fr));
-    grid-template-rows: repeat(auto-fit, 720px);
+    display: flex;
+    flex-direction: column;
 
 
-}
-.block { 
-    &__content {
-
+    &__block {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-    }
-    &__list {
-        margin: 1.5rem 0 0;
-        padding: 0;
-        list-style: none;
-        font-family: 'Gotham Pro L', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.125rem;
-        line-height: 1.5;
-        color: #6A7B8E;
-    }
-    &__img {
-        margin: 2rem;
-        align-self: center;
-        justify-self: center;
-        max-width: 496px;    
-        border-radius: 30px;
-        background-color: #F4F7FA;
-        & img {
-            max-width: 100%;
-            max-height: 536px;
-            box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
-            border-radius: 30px;
-        }
-    }
-}
-.slider-container {
-    padding: 2rem;
-    max-width: 45rem;
-    height: 20rem;
-    /*@media (max-width: 1520px) {
-        height: 22em;
-    }*/
-    & > * {
-        height: 100%;
-    }
-}
 
-.content1 {
-    padding: 0 0 0 .6em;
-    & h2 {
-        line-height: 1.2;
-    } 
-    & h3 {
-        line-height: 1.5;
-    }
-    & p {
-        margin-top: 1.3em;
-        font-size: 1.875em;
-        line-height: 1.5;
-        max-width: 22em;
-    }
-
-}
-.content2 {
-  margin: 2rem;
-
-    & h4 {
-        max-width: 18em;
-    }
-}
-
-.img1 {
-
-}
-
-.img2 {
+        &__group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap-reverse;
 
 
-}
-
-.form {
-    padding: 1.4em 0 0;
-    display: grid;
-    grid-template-columns: 2/3fr 1/3fr 1fr;
-    grid-template-areas:
-        "i1 . i2"
-        "i3 . i4"
-        "i5 . i6"
-        "i7 . i8"
-        "i9 i9 ."
-        "i10 i10 ."
-        "i11 i11 .";
-    @for $i from 1 through 11 {
-        &>*:nth-child(#{$i}) {
-            grid-area: i#{$i};
-            @if $i == 9 {
-                margin-top: 1.4em;
+            &__slider_container {
+                padding: 2rem;
+                max-width: 45rem;
+                height: 20rem;
+                align-self: center;
+            /*@media (max-width: 1520px)
+                height: 22em;
+            }*/
+                & > * {
+                height: 100%;
             }
-            @if $i < 9 {
-                margin-top: 0;
-                @if $i % 2 == 0 {
-                    margin-left: .2em;
+        }
+
+            &__image1 {
+                margin: 2rem;
+                align-self: center;
+                justify-self: center;
+                max-width: 496px;
+                border-radius: 30px;
+                background-color: #F4F7FA;
+
+                & img {
+                    max-width: 100%;
+                    max-height: 536px;
+                    box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
+                    border-radius: 30px;
                 }
             }
         }
+
+
+
+    }
+
+    &__content {
+        padding: 0 0 0 .6em;
+        display: flex;
+        flex-direction: row;
+
+        & h2 {
+            line-height: 1.2;
+        }
+
+        & h3 {
+            line-height: 1.5;
+        }
+
+        & p {
+            margin-top: 1.3em;
+            font-size: 1.875em;
+            line-height: 1.5;
+            max-width: 22em;
+        }
+
+        &__image2 {
+            margin: 2rem;
+            align-self: center;
+            justify-self: center;
+            max-width: 496px;
+            border-radius: 30px;
+            background-color: #F4F7FA;
+
+            & img {
+                max-width: 100%;
+                max-height: 536px;
+                box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
+                border-radius: 30px;
+            }
+        }
+
+
+        &__form {
+            padding: 1.4em 0 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*grid-template-columns: 2/3fr 1/3fr 1fr;
+        grid-template-areas:
+    "i1 . i2"
+    "i3 . i4"
+    "i5 . i6"
+    "i7 . i8"
+    "i9 i9 ."
+    "i10 i10 ."
+    "i11 i11 .";
+    */
+        @for $i from 1 through 11 {
+            & > *:nth-child(#{$i}) {
+                //grid-area: i#{$i};
+                margin-bottom: 20px;
+                @if $i == 9 {
+                    margin-top: 1.4em;
+                }
+                @if $i < 9 {
+                    margin-top: 0;
+                    @if $i % 2 == 0 {
+                        margin-left: .2em;
+                    }
+                }
+            }
+        }
+
+
+
     }
 }
