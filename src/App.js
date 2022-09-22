@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
-import Layaut from "./components/Layaut";
 import Main from "pages/Main";
 import Blog from "pages/Blog";
 import Post from "pages/Post";

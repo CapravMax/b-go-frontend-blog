@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 748px;
     & .form {
         width: 100%;
@@ -44,7 +44,4 @@
 .content1 {
     margin: 7rem;
     justify-content: flex-start;
-}
-.img1 {
-
 }

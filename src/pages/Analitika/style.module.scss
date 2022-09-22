@@ -53,6 +53,8 @@
         padding: 0 0 0 .6em;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
         & h2 {
             line-height: 1.2;
@@ -91,20 +93,26 @@
             display: flex;
             flex-direction: column;
         }
+    }
+}
 
-        /*grid-template-columns: 2/3fr 1/3fr 1fr;
-        grid-template-areas:
-    "i1 . i2"
-    "i3 . i4"
-    "i5 . i6"
-    "i7 . i8"
-    "i9 i9 ."
-    "i10 i10 ."
-    "i11 i11 .";
-    */
-        @for $i from 1 through 11 {
+
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-areas:
+    "i1 i2"
+    "i3 i4"
+    "i5 i6"
+    "i7 i8"
+    "i9 i9 "
+    "i10 i10"
+    "i11 i11";
+
+    @for $i from 1 through 11 {
             & > *:nth-child(#{$i}) {
-                //grid-area: i#{$i};
+                grid-area: i#{$i};
                 margin-bottom: 20px;
                 @if $i == 9 {
                     margin-top: 1.4em;
@@ -117,8 +125,8 @@
                 }
             }
         }
-
-
-
     }
-}
+
+
+
+
