@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
-import { Routes, Route } from "react-router-dom";
-import Layaut from "components/Layaut";
+import { Routes, Route, Outlet } from "react-router-dom";
+import Layaut from "./components/Layaut";
 import Main from "pages/Main";
 import Blog from "pages/Blog";
 import Post from "pages/Post";
@@ -15,13 +15,26 @@ import Avtomatizachia from 'pages/Avtomatizachia';
 import Anticrisis from "./pages/Anticrisis";
 import CreateProduct from 'pages/CreateProduct';
 import Contacts from "./pages/Contacts";
-import "./App.scss";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.scss";
+
 
 
 
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+  useEffect (() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    }, []);
+
   const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -30,10 +43,25 @@ function App() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const Layout = () => {
+      return  (
+          <>
+          <Header />
+            <Outlet />
+          <Footer />
+          </>
+      )
+  }
+
   return (
     <>
-      <Layaut>
+      <div className={'wrap'}>
+        <div className="b-go" style={{backgroundPosition: `left 50px top ${60 - offsetY / 10}px`}} />
+        {loading? (<div className={'loader'}>
+          <div className={'loader__spinner'}></div>
+        </div>) : (
         <Routes>
+          <Route element={<Layout />} >
           <Route path="/" element={<Main offsetY={offsetY} />} />
           <Route path="pod-klyuch" element={<PodKlyuch offsetY={offsetY} />} />
           <Route path="blog" element={<Blog offsetY={offsetY} />}>
@@ -50,12 +78,10 @@ function App() {
           <Route path="produkt" element={<CreateProduct offsetY={offsetY} />} />
           <Route path="contact" element={<Contacts offsetY={offsetY} /> } />}
           <Route path="*" element={<NotFound />} />
+          </Route>
         </Routes>
-</Layaut>
-
-
-
-
+        )}
+    </div>
     </>
   );
 }
