@@ -11,16 +11,9 @@
         align-items: center;
 
         &__content1 {
-            padding: 0 1rem 0 .6rem;
+            max-width: 710px;
             align-self: center;
-
-            & p {
-                padding-top: 0.3em;
-
-            }
         }
-
-
 
         &__image1 {
             margin: 3rem;
@@ -46,10 +39,13 @@
         align-items: flex-start;
 
         &__content2 {
-            max-width: 650px;
+            max-width: 710px;
+            & h3{
+                margin: 1rem 3rem;
+            }
 
                 &__list {
-                    margin: 1.5rem 0 0;
+                    margin: 1rem 3rem;
                     padding: 0;
                     list-style: none;
                     font-family: 'Gotham Pro L', sans-serif;
@@ -59,20 +55,17 @@
                     line-height: 1.5;
                     color: #6A7B8E;
                 }
-            & h3 {
-                margin: 3rem 0 3rem 0;
+
+            & p{
+                margin: 1rem 3rem;
             }
 
-
-            & p {
-                margin: 25px 0 0 0;
-            }
         }
 
         &__content3 {
-            max-width: 570px;
+            width: 710px;
             & h4{
-                margin: 0;
+                margin: 1rem 3rem;
             }
 
         }
@@ -88,10 +81,10 @@
         align-items: flex-start;
 
         &__content4 {
-            max-width: 580px;
+            max-width: 710px;
 
             &__list {
-                margin: 1.5rem 0 0;
+                margin: 1rem 3rem;
                 padding: 0;
                 list-style: none;
                 font-family: 'Gotham Pro L', sans-serif;
@@ -103,17 +96,13 @@
             }
 
             & h3 {
-                margin: 0;
-
+                margin: 1rem 3rem;
             }
 
-            & .block__list {
-                margin: 0 3rem;
-            }
         }
 
         &__content5 {
-            max-width: 580px;
+            max-width: 710px;
             & h4{
                 margin:  1rem 3rem;
             }
@@ -129,14 +118,16 @@
         align-items: flex-start;
 
         &__content6 {
-            & h3{
-                margin: 0;
+            width: 710px;
+
+                        & h3{
+                margin: 1rem 3rem;
             }
             & p {
-                margin: 1rem 0 0 0;
+                margin: 1rem 3rem;
             }
             &__list {
-                margin: 1rem 0 0;
+                margin: 1rem 3rem;
                 padding: 0;
                 list-style: none;
                 font-family: 'Gotham Pro L', sans-serif;
@@ -146,19 +137,15 @@
                 line-height: 1.5;
                 color: #6A7B8E;
 
-                &__item {
-                    line-height: inherit;
-                }
             }
         }
 
         &__content7 {
-                margin: 0;
+            width: 710px;
+            & h4{
+                margin: 3rem;
+            }
 
-                & p {
-                    margin-top: 0;
-
-                }
             }
 
     }
@@ -172,9 +159,9 @@
         align-items: flex-start;
 
         &__content8 {
-            max-width: 700px;
+            max-width: 710px;
             &__list {
-                margin: 1rem 0 0;
+                margin: 1rem 3rem;
                 padding: 0;
                 list-style: none;
                 font-family: 'Gotham Pro L', sans-serif;
@@ -188,7 +175,10 @@
         }
 
         &__content9 {
-            max-width: 575px;
+            max-width: 710px;
+            &__h4{
+                margin: 3rem;
+            }
 
         }
     }
@@ -202,15 +192,10 @@
         align-items: flex-start;
 
         &__content10 {
-        max-width: 700px;
-
-
-            & h3 {
-
-            }
+        max-width: 710px;
 
             &__list {
-                margin: 1rem 0 0;
+                margin: 1rem 3rem;
                 padding: 0;
                 list-style: none;
                 font-family: 'Gotham Pro L', sans-serif;
@@ -223,7 +208,7 @@
         }
 
         &__content11 {
-            max-width: 575px;
+            max-width: 710px;
         }
     }
 }
@@ -235,11 +220,6 @@
 
 
 
-@for $i from 1 to 12 {
-    .content#{$i} {
-
-    }
-}
 
 
 

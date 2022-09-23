@@ -16,7 +16,7 @@
             flex-direction: column;
             justify-content: space-around;
             text-align: justify;
-            max-width: 940px;
+            max-width: 800px;
 
             & p {
                 padding-top: 0.3em;
@@ -51,7 +51,7 @@
         margin-bottom: 50px;
 
         &__content2 {
-            max-width: 580px;
+            max-width: 800px;
 
             &__list {
                 padding: 0 3rem;
@@ -66,15 +66,9 @@
         }
 
         &__content3 {
-            max-width: 580px;
+            max-width: 800px;
 
-            & p {
-                max-width: 31em;
 
-                & ~ p {
-                    margin-top: 0;
-                }
-            }
         }
 
 
@@ -115,7 +109,7 @@
         justify-content: space-around;
 
         &__content4 {
-            max-width: 700px;
+            max-width: 800px;
 
             & h4 {
                 margin: 1.5em 3rem .1em;
@@ -127,7 +121,7 @@
         }
 
         &__content5 {
-            max-width: 580px;
+            max-width: 800px;
 
             & p ~ p {
                 margin-top: .1rem;
@@ -144,7 +138,7 @@
         justify-content: space-around;
 
         &__content6 {
-            max-width: 700px;
+            max-width: 800px;
 
 
             & p ~ p {
@@ -169,7 +163,7 @@
         }
 
         &__content7 {
-            max-width: 700px;
+            max-width: 800px;
 
 
             & h4 {

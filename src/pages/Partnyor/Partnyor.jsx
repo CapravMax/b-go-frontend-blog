@@ -4,7 +4,6 @@ import {PARTNER} from 'GraphQL/Queries'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
-
 import clsx from 'clsx';
 import styles from'./style.module.scss'
 
@@ -19,7 +18,7 @@ const Partnyor = ({offsetY}) => {
     useEffect(() => {}, [data])
     return (
         <div className={clsx(styles['partners'])}>
-            <div className={clsx(styles['block__content'], styles['content1'])}>
+            <div className={clsx(styles['partners__content'])}>
                 {!loading && (
                     <>
                         <h2>{data.page.partnership_content.block1.title}</h2>
@@ -33,7 +32,7 @@ const Partnyor = ({offsetY}) => {
                     </>
                 )}
             </div>
-            <div className={clsx(styles['block__img'], styles['img1'])} >
+            <div className={clsx(styles['partners__image1'])} >
                 {!loading &&  (
                     <img src={data.page.partnership_content.block1.image.sourceUrl} alt="" />
                 )} 

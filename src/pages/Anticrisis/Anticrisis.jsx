@@ -21,7 +21,7 @@ const [name, setName] = useState('')
     return (
         <div className={clsx(styles['anticrisis'])}>
             <div className={clsx(styles['anticrisis__block1'])}>
-            <div className={clsx(styles['anticrisis__title1'])}>
+            <div className={clsx(styles['anticrisis__block1__title1'])}>
                 {!loading && (
                     <>
                         <h2>{data.page.anticrisisConsalt.title1}</h2>

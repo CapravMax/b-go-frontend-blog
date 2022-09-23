@@ -1,5 +1,4 @@
 .main {
-    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -10,7 +9,6 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-
 
         &__lines {
 
@@ -130,12 +128,10 @@
     }
 
     &__block2 {
-        margin: 0 3vw;
-        padding: 50px 0;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(477px, 1fr));
-        grid-row-gap: 40px;
         justify-items: center;
+        margin: 2rem;
 
 
 
@@ -148,71 +144,80 @@
             &__item {
 
                 &--1 {
-                    background: no-repeat center url('../../assets/img/main/1.jpg') ;
+                    background: no-repeat center url('../../assets/img/main/1.jpg');
                     background-size: cover;
-                    width:  480px;
                     height: 490px;
+                    width: 100%;
                 }
 
 
 
                 &--2 {
                     background: no-repeat center url('../../assets/img/main/2.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
                 }
 
 
                 &--3 {
                     background: no-repeat center url('../../assets/img/main/3.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
                 }
 
                 &--4 {
                     background: no-repeat center url('../../assets/img/main/4.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
                 }
 
                 &--5 {
                     background: no-repeat center url('../../assets/img/main/5.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
 
                 }
 
                 &--6 {
                     background: no-repeat center url('../../assets/img/main/6.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
                 }
 
                 &--7 {
                     background: no-repeat center url('../../assets/img/main/7.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
                 }
 
                 &--8 {
                     background: no-repeat center url('../../assets/img/main/8.jpg');
-                    width: 480px;
+                    background-size: cover;
                     height: 490px;
+                    width: 100%;
                 }
 
                 &__title {
-                    margin-bottom: 1.25rem;
+                    text-align: center;
+                    margin: 1.25rem;
                     color: #FFFFFF;
+
                 }
 
 
                 &__list {
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
+                     margin: 0 auto;
+                     list-style: none;
 
 
                     & li{
+                        justify-self: center;
                         font-family: 'Gotham Pro', sans-serif;
                         font-style: normal;
                         font-weight: 400;
@@ -373,7 +378,7 @@
 
         &__image {
             justify-items: end;
-            margin: 0 2vw 0 116px;
+            margin: 3rem;
             & img {
                 width: 476px;
                 height: 536px;

@@ -1,9 +1,9 @@
 .contact {
-    margin: 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 70vh;
+    align-items: center;
 
     &__block1 {
         display: flex;
