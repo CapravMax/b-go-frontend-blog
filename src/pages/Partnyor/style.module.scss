@@ -9,16 +9,16 @@
     &__content {
         display: flex;
         flex-direction: column;
-        max-width: 800px;
+        max-width: 650px;
 
         & h2{
-            margin: 0 3rem;
+            margin: 1rem 0;
         }
         & h3 {
-            margin: 1rem 3rem;
+            margin: 1rem 0;
         }
         & p {
-            margin: 1rem 3rem;
+            margin: 1rem 0;
         }
 
 
@@ -52,7 +52,7 @@
     }
 }
 
-form {
+.form {
     margin: 1rem;
 }
 

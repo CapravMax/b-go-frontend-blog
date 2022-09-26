@@ -55,7 +55,7 @@ function App() {
   return (
     <>
       <div className={'wrap'}>
-        <div className="b-go" style={{backgroundPosition: `left 50px top ${60 - offsetY / 10}px`}} />
+        <div className={"b-go"} style={{backgroundPosition: `left 50px top ${60 - offsetY / 10}px`}} />
         {loading? (<div className={'loader'}>
           <div className={'loader__spinner'}></div>
         </div>) : (

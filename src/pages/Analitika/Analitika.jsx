@@ -18,11 +18,11 @@ import styles from "./style.module.scss";
 import SwiperWrapStyle from './SwiperWrapStyle'
 
 const Analitika = () => {
-    const {error, loading, data} = useQuery(ANALITIKA)
+    const { loading, data} = useQuery(ANALITIKA)
     
     const [name, setName] = useState('')
     const [contact, setContact] = useState('')
-    const changeName = (e) => setName(prev => e.target.value) 
+    const changeName = (e) => setName( prev=> e.target.value)
     const changeContact = (e) => setContact(prev => e.target.value) 
     useEffect(() => {
     },[data]);

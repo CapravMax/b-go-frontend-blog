@@ -1,18 +1,17 @@
 .header {
-    margin:50px 5rem 50px 5rem;
+    margin: 50px 5rem 50px 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
+    &__logo {
+        text-decoration: none;
+        background-image: url("../../assets/img/header/logo.svg");
+        width: 120px;
+        height: 60px;
+    }
 }
-.header__logo {
-    text-decoration:none;
-    background-image: url("../../assets/img/header/logo.svg");
-    width: 120px;
-    height: 60px;
-}
-
 .menu {
     font-family: 'Gotham Pro L', sans-serif;
     font-style: normal;

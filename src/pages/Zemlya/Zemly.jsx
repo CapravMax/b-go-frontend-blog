@@ -19,15 +19,15 @@ const Zemly = () => {
     useEffect(()=>{}, [data])
     return (
         <div className={clsx(styles['zemlya'])}>
-            <div className={clsx(styles['block__img'], styles['img1'])} >
+            <div className={clsx(styles['block__img'])} >
                 {!loading &&  (
                         <img src={data.page.earth_content.image.sourceUrl} alt="" />
                 )}
             </div>
-            <div className={clsx(styles['block__content'], styles['content1'])}>
+            <div className={clsx(styles['block__content'])}>
                 {!loading && (
                     <>
-                        <Form className={clsx(styles['form'])}>
+                        <Form className={clsx(styles['block__content__form'])}>
                             {Object.entries(data.page.earth_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}
                             <Input value={name} onChange={changeName} placeholder='Имя'/>
                             <Input value={contact} onChange={changeContact} placeholder='Контакт' />

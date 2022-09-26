@@ -9,8 +9,8 @@ import Button from 'components/Button';
 import clsx from 'clsx';
 import styles from './style.module.scss'
 
-const Personal = ({offsetY}) => {
-    const {error, loading, data} = useQuery(STAFF)
+const Personal = () => {
+    const {loading, data} = useQuery(STAFF)
 
     useEffect(() => {}, [data])
     return (

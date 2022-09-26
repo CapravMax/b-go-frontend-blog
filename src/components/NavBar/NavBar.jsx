@@ -15,16 +15,16 @@ const NavBar = ({toggle, isOpen}) => {
     return !loading ? (
         <div className="navigation">
 
-            <nav className={`navbar${isOpen? ' open' : ''}`}>
-                <ul className={`navbar__list${isOpen? ' open' : ''}`}>
+            <nav className={`navigation__navbar${isOpen? ' open' : ''}`}>
+                <ul className={`navigation__navbar__list${isOpen? ' open' : ''}`}>
                     {
                         data.menu.menuItems.nodes.map(({label, path, childItems}, i) => 
-                        <li key={id + i} className={`navbar__item${drop? ' drop' : ''}`} onClick={()=> childItems.nodes.length && setDrop(x => !x)}>
+                        <li key={id + i} className={`navigation__navbar__list__item${drop? ' drop' : ''}`} onClick={()=> childItems.nodes.length && setDrop(x => !x)}>
                             {childItems.nodes.length ? (
                                 <>
                                     <span>{label}<Arrow/></span>
-                                    <ul className='navbar__sublist'>
-                                        {childItems.nodes.map(({label, path}, i) => <li key={id + i} className={`navbar__subitem${drop ? ' drop' : ''}`}><Link to={path}>{label}</Link></li>)}
+                                    <ul className='navigation__navbar__list__sublist'>
+                                        {childItems.nodes.map(({label, path}, i) => <li key={id + i} className={`navigation__navbar__list__sublist__subitem${drop ? ' drop' : ''}`}><Link to={path}>{label}</Link></li>)}
                                     </ul>
                                 </>
                             ) : <Link to={path} key={i}>{label}</Link>}

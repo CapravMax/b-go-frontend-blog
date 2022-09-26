@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 70vh;
     align-items: center;
+    flex-wrap: wrap;
 
     &__block1 {
         display: flex;
          flex-wrap: wrap;
+        max-width: 650px;
 
         &__group {
-            width: 450px;
+
             display: flex;
             flex-direction: column;
+            margin: 0 3rem;
 
             & h5 {
                 margin: 0;
@@ -32,6 +34,7 @@
                 font-size: 30px;
                 line-height: 100%;
                 color: #6A7B8E;
+               text-decoration: none;
             }
 
             & p {
@@ -42,12 +45,24 @@
                 font-size: 18px;
                 line-height: 100%;
                 color: #6A7B8E;
+                & a {
+                    margin: 5px 0 5px 0;
+                    font-family: 'Gotham Pro', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 100%;
+                    color: #6A7B8E;
+                    text-decoration: none;
+                }
             }
+
         }
 
         &__form {
-            width: 350px;
+            max-width: 650px;
             & h5 {
+                margin: 1rem 3rem;
                 font-family: 'Gotham Pro',sans-serif;
                 font-style: normal;
                 font-weight: 400;
