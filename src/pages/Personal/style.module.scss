@@ -45,8 +45,6 @@
             }
 
                 &__list {
-                    margin: 1rem 3rem;
-                    padding: 0;
                     list-style: none;
                     font-family: 'Gotham Pro L', sans-serif;
                     font-style: normal;
@@ -54,6 +52,7 @@
                     font-size: 1.125rem;
                     line-height: 1.5;
                     color: #6A7B8E;
+
                 }
 
             & p{
@@ -103,7 +102,7 @@
 
         &__content5 {
             max-width: 710px;
-            & h4{
+            & h3{
                 margin:  1rem 3rem;
             }
         }
@@ -121,7 +120,7 @@
             width: 710px;
 
                         & h3{
-                margin: 1rem 3rem;
+                margin: 3rem;
             }
             & p {
                 margin: 1rem 3rem;
@@ -176,7 +175,7 @@
 
         &__content9 {
             max-width: 710px;
-            &__h4{
+            & h4{
                 margin: 3rem;
             }
 
@@ -209,6 +208,9 @@
 
         &__content11 {
             max-width: 710px;
+            & h4 {
+                margin: 3rem;
+            }
         }
     }
 }

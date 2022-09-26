@@ -75,7 +75,7 @@ function App() {
           <Route path="analitika" element={<Analitika offsetY={offsetY} />} />
           <Route path="avtomatizaciya" element={<Avtomatizachia offsetY={offsetY} />} />
           <Route path="produkt" element={<CreateProduct offsetY={offsetY} />} />
-          <Route path="contact" element={<Contacts offsetY={offsetY} /> } />}
+          <Route path="contact" element={<Contacts offsetY={offsetY} /> } />
           <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -31,7 +31,7 @@ const Personal = ({offsetY}) => {
                     </div>
             </div>
 
-            <div className={clsx(styles['personal__block2'], styles['content2'])}>
+            <div className={clsx(styles['personal__block2'])}>
                     <div className={clsx(styles['personal__block2__content2'])}>
                 {!loading && (
                     <>
@@ -44,7 +44,7 @@ const Personal = ({offsetY}) => {
                     </>
                 )}
             </div>
-                    <div className={clsx(styles['personal__block2__content3'], styles['content3'])}>
+                    <div className={clsx(styles['personal__block2__content3'])}>
                             {!loading && (
                                 <>
                                         <h4>{data.page.staff_content.block2.form.title}</h4>
@@ -58,7 +58,7 @@ const Personal = ({offsetY}) => {
                     </div>
             </div>
 
-            <div className={clsx(styles['personal__block3'], styles['content4'])}>
+            <div className={clsx(styles['personal__block3'])}>
                     <div className={clsx(styles['personal__block3__content4'])}>
                 {!loading && (
                     <>
@@ -69,7 +69,7 @@ const Personal = ({offsetY}) => {
                     </>
                 )}
             </div>
-                    <div className={clsx(styles['personal__block3__content5'], styles['content5'])}>
+                    <div className={clsx(styles['personal__block3__content5'])}>
                                                         {!loading && (
                                 <>
                                         <h3>{data.page.staff_content.block4.title}</h3>
@@ -98,7 +98,7 @@ const Personal = ({offsetY}) => {
                     </>
                 )}
             </div>
-                    <div className={clsx(styles['personal__block4__content7'], styles['content7'])}>
+                    <div className={clsx(styles['personal__block4__content7'])}>
                             {!loading && (
                                 <>
                                         <h4>{data.page.staff_content.block5.form.title}</h4>
