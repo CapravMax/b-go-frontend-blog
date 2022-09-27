@@ -1,14 +1,16 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import {useQuery} from '@apollo/client'
 import {MAIN} from 'GraphQL/Queries'
 import clsx from 'clsx';
+import {Link} from "react-router-dom";
 import styles from'./style.module.scss'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
 
 const Main = () => {
-    const {error, loading, data} = useQuery(MAIN)
+
+    const {loading, data} = useQuery(MAIN)
     useEffect(() => {
     }, [data]);
 
@@ -25,20 +27,20 @@ const Main = () => {
                             <rect x="21" y="229" width="1" height="21" transform="rotate(90 21 229)" fill="url(#paint3_linear_132_1127)"/>
                             <defs>
                                 <linearGradient id="paint0_linear_132_1127" x1="21.5" y1="0" x2="21.5" y2="21" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6A7B8E" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#6A7B8E"/>
+                                    <stop stopColor="#6A7B8E" stopOpacity="0"/>
+                                    <stop offset="1" stopColor="#6A7B8E"/>
                                 </linearGradient>
                                 <linearGradient id="paint1_linear_132_1127" x1="21.5" y1="97" x2="21.5" y2="118" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6A7B8E" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#6A7B8E"/>
+                                    <stop stopColor="#6A7B8E" stopOpacity="0"/>
+                                    <stop offset="1" stopColor="#6A7B8E"/>
                                 </linearGradient>
                                 <linearGradient id="paint2_linear_132_1127" x1="21.5" y1="167" x2="21.5" y2="188" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6A7B8E" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#6A7B8E"/>
+                                    <stop stopColor="#6A7B8E" stopOpacity="0"/>
+                                    <stop offset="1" stopColor="#6A7B8E"/>
                                 </linearGradient>
                                 <linearGradient id="paint3_linear_132_1127" x1="21.5" y1="229" x2="21.5" y2="250" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6A7B8E" stop-opacity="0"/>
-                                    <stop offset="1" stop-color="#6A7B8E"/>
+                                    <stop stopColor="#6A7B8E" stopOpacity="0"/>
+                                    <stop offset="1" stopColor="#6A7B8E"/>
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -93,6 +95,7 @@ const Main = () => {
 
                 <div className={clsx(styles['main__block2'])}>
                     {!loading && Object.entries(data.page.content_on_main.block2).filter(key => /service/.test(key)).map(([_, value]) => value).map(({title, description, image}, index)=>(
+                        <Link to='#'>
                         <div className={clsx(styles['main__block2__item'], styles[`main__block2__item--${index + 1}`])} key={index}>
                             <div className={clsx(styles['main__block2__wrap'])}>
                                 <h3 className={clsx(styles['main__block2__item__title'])}>{title}</h3>
@@ -101,6 +104,7 @@ const Main = () => {
                                 </ul>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
 
@@ -220,9 +224,9 @@ const Main = () => {
                                 <h5>{data.page.content_on_main.block6.group8.subtitle5}</h5>
                                 <p>{data.page.content_on_main.block6.group8. description7}</p>
                                 <h5>{data.page.content_on_main.block6.group8.subtitle6}</h5>
-                                <p>{data.page.content_on_main.block6.group8. description8}</p>
+                                <p><a href="mailto:Info@b-go.ru">{data.page.content_on_main.block6.group8. description8}</a></p>
                                 <h5>{data.page.content_on_main.block6.group8.subtitle7}</h5>
-                                <p>{data.page.content_on_main.block6.group8. description9}</p>
+                                <p><a href="tel:+78005556105">{data.page.content_on_main.block6.group8. description9}</a></p>
                             </>
                         )}
 

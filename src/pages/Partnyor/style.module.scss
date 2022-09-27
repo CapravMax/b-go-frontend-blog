@@ -1,10 +1,11 @@
 .partners {
-    margin: 50px;
+    margin: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    height: 60vh;
 
     &__content {
         display: flex;
@@ -46,7 +47,7 @@
         & img {
             max-width: 100%;
             max-height: 536px;
-            box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 15%);
+            box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
             border-radius: 30px;
         }
     }

@@ -129,7 +129,7 @@
 
     &__block2 {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
         justify-items: center;
         margin: 2rem;
 
@@ -477,15 +477,22 @@
                     line-height: 100%;
                     letter-spacing: 0.002em;
                     color: #3C3C3C;
+
+
                 }
                 & p {
-                    font-family: 'Gotham Pro', sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 150%;
-                    font-feature-settings: 'pnum' on, 'lnum' on;
                     margin: 2px 0 2px 0;
+
+                    & a{
+                        font-family: 'Gotham Pro', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                       color: #3C3C3C;
+
+                        text-decoration: none;
+                    }
 
                 }
 

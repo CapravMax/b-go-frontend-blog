@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import {useQuery} from '@apollo/client';
 import {CONTACT} from 'GraphQL/Queries';
-import {Link} from "react-router-dom";
 import clsx from 'clsx';
 import styles from './style.module.scss';
 import Input from 'components/Input';
@@ -9,7 +8,7 @@ import Button from 'components/Button';
 import Form from 'components/Form';
 
 const Contacts = () => {
-    const {error, loading, data} = useQuery(CONTACT)
+    const {loading, data} = useQuery(CONTACT)
     useEffect(() => {
     }, [data]);
 
@@ -26,9 +25,9 @@ const Contacts = () => {
                                     <h6>{data.page.contact.block1.group.subtitle2}</h6>
                                     <p>{data.page.contact.block1.group.paragraph2}</p>
                                     <h6>{data.page.contact.block1.group.subtitle3}</h6>
-                                    <p><Link to="tel:{data.page.contact.block1.group.paragraph3}">{data.page.contact.block1.group.paragraph3}</Link></p>
+                                    <p><a href="mailto:Info@b-go.ru">{data.page.contact.block1.group.paragraph3}</a></p>
                                     <h6>{data.page.contact.block1.group.subtitle4}</h6>
-                                    <p><Link to =" mailto:{data.page.contact.block1.group.paragraph4}">{data.page.contact.block1.group.paragraph4}</Link></p>
+                                    <p><a href ="tel:+78005556105">{data.page.contact.block1.group.paragraph4}</a></p>
                                 </>
                             )}
                         </div>

@@ -1,4 +1,4 @@
-import {useId, useEffect} from 'react';
+import {useId} from 'react';
 import { Link } from "react-router-dom";
 import {useQuery} from '@apollo/client'
 import {ROUTES} from 'GraphQL/Queries'
@@ -8,7 +8,7 @@ import styles from './style.module.scss'
 
 const Footer = () => {
     const id = useId()
-    const {error, loading, data} = useQuery(ROUTES)
+    const {loading, data} = useQuery(ROUTES)
     // console.log(data.menu.menuItems.nodes)
     return (
         <div className={clsx(styles['footer'])}>
@@ -35,8 +35,8 @@ const Footer = () => {
             <div className={clsx(styles['contacts'])}>
                 { !loading && (
                     <>
-                        <span>{data.menu.contacts.phone}</span>
-                        <span>{data.menu.contacts.email}</span>
+                        <span><a href="tel:+78005556105">{data.menu.contacts.phone}</a></span>
+                        <span><a href="mailto:Info@b-go.ru">{data.menu.contacts.email}</a></span>
                     </>
                 )}
             </div>
