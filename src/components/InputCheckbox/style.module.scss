@@ -6,10 +6,11 @@
     font-size: 18px;
     line-height: 1.5;
     min-height: 2.7em;
-    color: #6A7B8E;
+    color: #3C3C3C;
 
     & ~ & {
         margin-top: .3rem;
+        color: #3C3C3C;
     }
 
     &__input {

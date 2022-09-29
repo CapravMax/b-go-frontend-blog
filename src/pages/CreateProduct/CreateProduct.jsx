@@ -44,12 +44,12 @@ const CreateProduct = ({}) => {
                         <ul className={clsx(styles['product__block2__content2__list2'])}>
                             {data.page.product_creation_content.block2.list.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
-                        <h4>{data.page.product_creation_content.block2.form.title}</h4>
+                        {/*<h4>{data.page.product_creation_content.block2.form.title}</h4>*/}
                         <Form>
-                            <Input placeholder='Имя'/>
-                            <Input placeholder='Контакт' />
-                            <Input placeholder='Город' />
-                            <Button>Отправить</Button>
+                            {/*<Input placeholder='Имя'/>*/}
+                            {/*<Input placeholder='Контакт' />*/}
+                            {/*<Input placeholder='Город' />*/}
+                            <Button>Получить кейсы</Button>
                         </Form>
                     </>
                 )}
@@ -69,12 +69,12 @@ const CreateProduct = ({}) => {
                         <ul className={clsx((styles['product__block3__content3__list3']))}>
                             {data.page.product_creation_content.block3.list.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
-                        <h4>{data.page.product_creation_content.block3.form.title}</h4>
+                        {/*<h4>{data.page.product_creation_content.block3.form.title}</h4>*/}
                         <Form>
-                            <Input placeholder='Имя'/>
-                            <Input placeholder='Контакт' />
-                            <Input placeholder='Город' />
-                            <Button>Отправить</Button>
+                            {/*<Input placeholder='Имя'/>*/}
+                            {/*<Input placeholder='Контакт' />*/}
+                            {/*<Input placeholder='Город' />*/}
+                            <Button>Запросить портфолио</Button>
                         </Form>
                     </>
                 )}
@@ -94,12 +94,12 @@ const CreateProduct = ({}) => {
                         <ul className={clsx(styles['product__block4__content4__list4'])}>
                             {data.page.product_creation_content.block4.list.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
-                        <h4>{data.page.product_creation_content.block4.form.title}</h4>
+                        {/*<h4>{data.page.product_creation_content.block4.form.title}</h4>*/}
                         <Form>
-                            <Input placeholder='Имя'/>
-                            <Input placeholder='Контакт' />
-                            <Input placeholder='Город' />
-                            <Button>Отправить</Button>
+                            {/*<Input placeholder='Имя'/>*/}
+                            {/*<Input placeholder='Контакт' />*/}
+                            {/*<Input placeholder='Город' />*/}
+                            <Button>Получить презентацию</Button>
                         </Form>
                     </>
                 )}

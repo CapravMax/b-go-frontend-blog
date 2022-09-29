@@ -2,12 +2,11 @@ import {useEffect} from 'react';
 import {useQuery} from '@apollo/client'
 import {MAIN} from 'GraphQL/Queries'
 import clsx from 'clsx';
-import {Link} from "react-router-dom";
 import styles from'./style.module.scss'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
-import NavBar from "../../components/NavBar";
+
 
 const Main = () => {
 
@@ -80,14 +79,17 @@ const Main = () => {
                     <div className={clsx(styles['main__block1__group2'])}>
                         {!loading && (
                             <>
-                                <h5>{data.page.content_on_main.block1.group2.title2}</h5>
+                                {/*<h5>{data.page.content_on_main.block1.group2.title2}</h5>*/}
                             </>
                         )}
-                                <Form>
-                                    <Input placeholder='Имя'/>
-                                    <Input placeholder='Контакт' />
-                                    <Input placeholder='Город' />
-                                    <Button>Отправить</Button>
+                                <Form className={clsx(styles['main__block1__group2__form'])}>
+                                    {/*выключено до лучших времен*/}
+                                    {/*<Input placeholder='Имя'/>*/}
+                                    {/*<Input placeholder='Контакт' />*/}
+                                    {/*<Input placeholder='Город' />*/}
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                        <Button>Узнать больше</Button>
+                                    </a>
                                 </Form>
 
                     </div>
@@ -232,25 +234,30 @@ const Main = () => {
                                 <h5>{data.page.content_on_main.block6.group8.subtitle7}</h5>
                                 <p><a href="tel:+78005556105">{data.page.content_on_main.block6.group8. description9}</a></p>
                             </>
+
                         )}
 
-                    </div>
-
-                    <div className={clsx(styles['main__block6__groups__group9'])}>
-                        {!loading && (
-                            <>
-                                <h4>{data.page.content_on_main.block6.group9.title8}</h4>
-                            </>
-                        )}
-                                <Form>
-                                    <Input placeholder='Имя'/>
-                                    <Input placeholder='Контакт' />
-                                    <Input placeholder='Город' />
-                                    <Button>Отправить</Button>
-                                </Form>
-
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                            <Button>Написать</Button>
+                        </a>
 
                     </div>
+                    {/*Выключено до лучших времен*/}
+                    {/*<div className={clsx(styles['main__block6__groups__group9'])}>*/}
+                    {/*    {!loading && (*/}
+                    {/*        <>*/}
+                    {/*            <h4>{data.page.content_on_main.block6.group9.title8}</h4>*/}
+                    {/*        </>*/}
+                    {/*    )}*/}
+                    {/*            <Form>*/}
+                    {/*                <Input placeholder='Имя'/>*/}
+                    {/*                <Input placeholder='Контакт' />*/}
+                    {/*                <Input placeholder='Город' />*/}
+                    {/*                <Button>Отправить</Button>*/}
+                    {/*            </Form>*/}
+
+
+                    {/*</div>*/}
 
                     </div>
                 </div>

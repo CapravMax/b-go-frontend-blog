@@ -30,22 +30,28 @@ const Contacts = () => {
                                     <p><a href ="tel:+78005556105">{data.page.contact.block1.group.paragraph4}</a></p>
                                 </>
                             )}
+
+                        <Form className={clsx(styles['form'])}>
+                            {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                            {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                            <Button>Написать</Button>
+                        </Form>
                         </div>
                     </div>
-                    <div className={clsx(styles['contact__block1__form'])}>
-                        {!loading && (
-                            <>
-                                <h5>{data.page.contact.block1.form.subtitle5}</h5>
-                            </>
-                        )}
-                                <Form>
-                                    <Input placeholder='Имя'/>
-                                    <Input placeholder='Контакт' />
-                                    <Input placeholder='Город' />
-                                    <Button>Отправить</Button>
-                                </Form>
+                    {/*<div className={clsx(styles['contact__block1__form'])}>*/}
+                    {/*    {!loading && (*/}
+                    {/*        <>*/}
+                    {/*            <h5>{data.page.contact.block1.form.subtitle5}</h5>*/}
+                    {/*        </>*/}
+                    {/*    )}*/}
+                    {/*            <Form>*/}
+                    {/*                <Input placeholder='Имя'/>*/}
+                    {/*                <Input placeholder='Контакт' />*/}
+                    {/*                <Input placeholder='Город' />*/}
+                    {/*                <Button>Отправить</Button>*/}
+                    {/*            </Form>*/}
 
-                    </div>
+                    {/*</div>*/}
 
             </div>
 

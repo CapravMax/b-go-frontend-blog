@@ -18,9 +18,11 @@
             flex-direction: column;
             & h2{
                 margin: 1rem 3rem;
+                color: #3C3C3C;
             }
             & h3{
                 margin: 0 3rem;
+                color: #3C3C3C;
             }
 
         &__list {
@@ -32,7 +34,7 @@
             font-weight: 300;
             font-size: 1.125rem;
             line-height: 1.5;
-            color: #6A7B8E;
+            color: #3C3C3C;
         }
     }
         &__image1 {
@@ -59,14 +61,17 @@
             margin-top: 1.1em;
             font-size: 1.875rem;
             line-height: 1.2;
+
         }
 
         & h3 + h3 {
             margin: 0 3rem;
+            color: #3C3C3C;
         }
 
         & h3 {
             line-height: 57px;
+            color: #3C3C3C;
         }
 
     }
@@ -85,6 +90,7 @@
 
             & h3 {
                 margin:1rem 3rem;
+                color: #3C3C3C;
             }
 
             &__list {
@@ -96,7 +102,7 @@
                 font-weight: 300;
                 font-size: 1.125rem;
                 line-height: 1.5;
-                color: #6A7B8E;
+                color: #3C3C3C;
             }
         }
 
@@ -106,11 +112,13 @@
 
             & h3 {
                 margin: 1rem 3rem;
+                color: #3C3C3C;
                 };
 
                 & + p {
                     padding: .5em 0;
                     text-align: justify;
+                    color: #3C3C3C;
                 }
             }
         }

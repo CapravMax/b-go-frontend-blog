@@ -59,9 +59,9 @@ const [name, setName] = useState('')
                         <p>{data.page.turnkey_services_content.block3.paragraph1}</p>
                         <h3 className={clsx(styles['pod-kluch__content2__form__title'])}>{data.page.turnkey_services_content.block3.form.title}</h3>
                         <Form className={clsx(styles['form'])}>
-                            <Input value={name} onChange={changeName} placeholder='Имя'/>
-                            <Input value={contact} onChange={changeContact} placeholder='Контакт' />
-                            <Button>Отправить</Button>
+                            {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                            {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                            <Button>Получить</Button>
                         </Form>
                     </>
                 )}

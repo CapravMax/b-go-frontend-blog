@@ -21,6 +21,7 @@
             & p {
                 padding-top: 0.3em;
                 max-width: 45em;
+                color: #3C3C3C;
             }
 
         }
@@ -61,7 +62,7 @@
                 font-weight: 300;
                 font-size: 1.125rem;
                 line-height: 1.5;
-                color: #6A7B8E;
+                color: #3C3C3C;
             }
         }
 
@@ -83,21 +84,26 @@
 
             & ~ p {
                 margin-top: 0.5em;
+                color: #3C3C3C;
             }
         }
 
         & h3 {
             line-height: 1.5;
+            color: #3C3C3C;
         }
 
         & .block__list {
             margin: 1rem;
             max-width: 32em;
+            color: #3C3C3C;
+
         }
 
         & * ~ h4 {
             margin-top: 1.7em;
             max-width: 17em;
+            color: #3C3C3C;
         }
     }
 
@@ -113,10 +119,12 @@
 
             & h4 {
                 margin: 1.5em 3rem .1em;
+                color: #3C3C3C;
             }
 
             & p ~ p {
                 margin-top: .8rem;
+                color: #3C3C3C;
             }
         }
 
@@ -125,6 +133,7 @@
 
             & p ~ p {
                 margin-top: 1rem;
+                color: #3C3C3C;
             }
         }
 
@@ -143,6 +152,7 @@
 
             & p ~ p {
                 margin-top: 1.3rem;
+                color: #3C3C3C;
             }
 
             &__list {
@@ -153,7 +163,7 @@
                 font-weight: 300;
                 font-size: 1.125rem;
                 line-height: 1.5;
-                color: #6A7B8E;
+                color: #3C3C3C;
             }
 
             &__item {
@@ -169,6 +179,7 @@
             & h4 {
                 margin-top: 1.4em;
                 max-width: 18em;
+                color: #3C3C3C;
             }
         }
     }

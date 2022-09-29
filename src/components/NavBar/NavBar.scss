@@ -11,7 +11,7 @@
     min-width: content-box;
     display: flex;
     justify-content: flex-end;
-    z-index: 99;
+    z-index: 10;
 }
 .navbar {
     padding: 0.3em 0;
@@ -45,7 +45,7 @@
         line-height: 13px;
         display: inline-flex;
         align-items: baseline;
-        color: #6A7B8E;
+        color: #3C3C3C;
         transform: translateY(-50px);
         transition: all 1s linear;
         & a {
@@ -53,7 +53,7 @@
             font-weight: inherit;
             font-size: inherit;
             text-decoration: none;
-            color: black;
+            color: #3C3C3C;
         }
         @for $i from 1 through 6 {
             &:nth-child(#{7 - $i}) {
@@ -75,6 +75,7 @@
             & a {
                 transition: .7s;
                 top: 50%;
+                color: #3C3C3C;
             }
         }
         & + .navbar__item {
@@ -100,6 +101,8 @@
         transition: .7s;
         height: 1rem;
         overflow: hidden;
+        color: #3C3C3C;
+        margin: 1rem 0;
 
 
 
@@ -107,6 +110,7 @@
             position: absolute;
             top: -100%;
             transform: translateY(-50%);
+            color: #3C3C3C;
         }
     }
 }

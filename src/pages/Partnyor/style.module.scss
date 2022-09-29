@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    height: max-content;
 
     &__content {
         display: flex;
@@ -14,12 +14,15 @@
 
         & h2{
             margin: 1rem 0;
+            color: #3C3C3C;
         }
         & h3 {
             margin: 1rem 0;
+            color: #3C3C3C;
         }
         & p {
             margin: 1rem 0;
+            color: #3C3C3C;
         }
 
 
@@ -32,7 +35,7 @@
             font-weight: 300;
             font-size: 1.125rem;
             line-height: 1.5;
-            color: #6A7B8E;
+            color: #3C3C3C;
         }
 
     }

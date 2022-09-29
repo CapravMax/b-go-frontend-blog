@@ -4,6 +4,8 @@ import {AUTOMATIZATION} from 'GraphQL/Queries';
 import clsx from 'clsx';
 import styles from './style.module.scss';
 import {Link} from "react-router-dom";
+import Form from "../../components/Form";
+import Button from "../../components/Button";
 
 const Avtomatizachia = ({offsetY}) => {
     const {error, loading, data} = useQuery(AUTOMATIZATION)
@@ -38,7 +40,12 @@ const Avtomatizachia = ({offsetY}) => {
                             <ul className={clsx(styles['avtomatizachia__block2__content2__list2'])}>
                                 {data.page.automatization_content.block2.list2.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                             </ul>
-                            <h4><Link to={data.page.automatization_content.block2.link.url}>{data.page.automatization_content.block2.link.text}</Link></h4>
+                            {/*<h4><Link to={data.page.automatization_content.block2.link.url}>{data.page.automatization_content.block2.link.text}</Link></h4>*/}
+                            <Form className={clsx(styles['form'])}>
+                                {/*<Input placeholder='Имя'/>*/}
+                                {/*<Input placeholder='Контакт' />*/}
+                                <Button>Получить консультацию</Button>
+                            </Form>
                         </>
                 )}
             </div>

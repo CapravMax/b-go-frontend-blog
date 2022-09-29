@@ -40,9 +40,9 @@ const Strategii = () => {
                         </ul>
                         <h4>{data.page.strategy_content.block2.form.title}</h4>
                         <Form className={clsx(styles['form'])}>
-                            <Input placeholder='Имя'/>
-                            <Input placeholder='Контакт'/>
-                            <Button>Отправить</Button>
+                            {/*<Input placeholder='Имя'/>*/}
+                            {/*<Input placeholder='Контакт'/>*/}
+                            <Button>Получить</Button>
                         </Form>
                     </>
                 )}
@@ -69,9 +69,9 @@ const Strategii = () => {
                         <p>{data.page.strategy_content.block4.paragraph2}</p>
                         <h4>{data.page.strategy_content.block4.form.title}</h4>
                         <Form className={clsx(styles['form'])}>
-                            <Input placeholder='Имя'/>
-                            <Input placeholder='Контакт'/>
-                            <Button>Отправить</Button>
+                            {/*<Input placeholder='Имя'/>*/}
+                            {/*<Input placeholder='Контакт'/>*/}
+                            <Button>Получить</Button>
                         </Form>
                     </>
                 )}
@@ -112,9 +112,9 @@ const Strategii = () => {
                             <p>{data.page.strategy_content.block7.paragraph2}</p>
                             <h4>{data.page.strategy_content.block7.form.title}</h4>
                             <Form className={clsx(styles['form'])}>
-                                <Input placeholder='Имя'/>
-                                <Input placeholder='Контакт'/>
-                                <Button>Отправить</Button>
+                                {/*<Input placeholder='Имя'/>*/}
+                                {/*<Input placeholder='Контакт'/>*/}
+                                <Button>Получить</Button>
                             </Form>
                         </>
                     )}

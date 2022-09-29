@@ -66,9 +66,9 @@ const [name, setName] = useState('')
                         <>
                             <h3>{data.page.anticrisisConsalt.form.title4}</h3>
                             <Form className={clsx(styles['form'])}>
-                                <Input value={name} onChange={changeName} placeholder='Имя'/>
-                                <Input value={contact} onChange={changeContact} placeholder='Контакт' />
-                                <Button>Отправить</Button>
+                                {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                                {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                                <Button>Получить</Button>
                             </Form>
                         </>
                     )}

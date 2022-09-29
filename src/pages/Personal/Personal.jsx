@@ -49,9 +49,9 @@ const Personal = () => {
                                 <>
                                         <h4>{data.page.staff_content.block2.form.title}</h4>
                                         <Form className={clsx(styles['form'])}>
-                                                <Input placeholder='Имя'/>
-                                                <Input placeholder='Контакт'/>
-                                                <Button>Отправить</Button>
+                                                {/*<Input placeholder='Имя'/>*/}
+                                                {/*<Input placeholder='Контакт'/>*/}
+                                                <Button>Заявка</Button>
                                         </Form>
                                 </>
                             )}
@@ -77,9 +77,9 @@ const Personal = () => {
                                         <p>{data.page.staff_content.block4.paragraph2}</p>
                                         <h4>{data.page.staff_content.block4.form.title}</h4>
                                         <Form className={clsx(styles['form'])}>
-                                                <Input placeholder='Имя'/>
-                                                <Input placeholder='Контакт' />
-                                                <Button>Отправить</Button>
+                                                {/*<Input placeholder='Имя'/>*/}
+                                                {/*<Input placeholder='Контакт' />*/}
+                                                <Button>Получить</Button>
                                         </Form>
                                 </>
                             )}
@@ -103,9 +103,9 @@ const Personal = () => {
                                 <>
                                         <h4>{data.page.staff_content.block5.form.title}</h4>
                                         <Form className={clsx(styles['form'])}>
-                                                <Input placeholder='Имя'/>
-                                                <Input placeholder='Контакт' />
-                                                <Button>Отправить</Button>
+                                                {/*<Input placeholder='Имя'/>*/}
+                                                {/*<Input placeholder='Контакт' />*/}
+                                                <Button>Запросить</Button>
                                         </Form>
                                 </>
                             )}
@@ -128,9 +128,9 @@ const Personal = () => {
                                 <>
                                         <h4>{data.page.staff_content.block6.form.title}</h4>
                                         <Form className={clsx(styles['form'])}>
-                                                <Input placeholder='Имя'/>
-                                                <Input placeholder='Контакт' />
-                                                <Button>Отправить</Button>
+                                                {/*<Input placeholder='Имя'/>*/}
+                                                {/*<Input placeholder='Контакт' />*/}
+                                                <Button>Запросить</Button>
                                         </Form>
                                 </>
                             )}
@@ -153,9 +153,9 @@ const Personal = () => {
                                 <>
                                         <h4>{data.page.staff_content.block7.form.title}</h4>
                                         <Form className={clsx(styles['form'])}>
-                                                <Input placeholder='Имя'/>
-                                                <Input placeholder='Контакт' />
-                                                <Button>Отправить</Button>
+                                                {/*<Input placeholder='Имя'/>*/}
+                                                {/*<Input placeholder='Контакт' />*/}
+                                                <Button>Запросить</Button>
                                         </Form>
                                 </>
                             )}

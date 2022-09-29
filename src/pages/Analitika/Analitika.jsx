@@ -70,14 +70,14 @@ const Analitika = () => {
 
             <div className={clsx(styles['analitika__content__form'])}>
                 {!loading && (
-                    <>
-                        <h4>{data.page.analytics_content.form.title}</h4>
+                  <>
+                       <h4>{data.page.analytics_content.form.title}</h4>
                         <Form className={clsx(styles['form'])} >
-                            {Object.entries(data.page.analytics_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}
+                            {/*{Object.entries(data.page.analytics_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}*/}
 
-                            <Input value={name} onChange={changeName} placeholder='Имя'/>
-                            <Input value={contact} onChange={changeContact} placeholder='Контакт' />
-                            <Button>Отправить</Button>
+                            {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                            {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                            <Button>Получить</Button>
                         </Form>
                     </>
                 )}

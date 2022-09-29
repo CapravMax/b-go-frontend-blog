@@ -25,12 +25,13 @@
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 1;
-        color: #6A7B8E;
+        color: #3C3C3C;
         text-decoration: none;
     }
     & > * {
         padding: 0 0.5em;
         font-family: 'Gotham Pro L', sans-serif;
+        color: #3C3C3C;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -56,6 +57,7 @@
         justify-content: flex-end;
         align-items: center;
         background: inherit;
+        color: #3C3C3C;
     }
 
     &__item {
@@ -68,7 +70,7 @@
         line-height: 13px;
         display: inline-flex;
         align-items: baseline;
-        color: #6A7B8E;
+        color: #3C3C3C;
         background: inherit;
         z-index: 1;
         overflow: hidden;
@@ -77,7 +79,7 @@
             font-weight: inherit;
             font-size: inherit;
             text-decoration: none;
-            color: #6A7B8E;
+            color: #3C3C3C;;
         }
 
         &:hover {
@@ -110,7 +112,7 @@
         visibility: hidden;
         transition: 0.2s;
         background-color: inherit;
-        color: #6A7B8E;
+        color: #3C3C3C;
         bottom: 1.2em;
         z-index: -1;
     }
@@ -118,6 +120,7 @@
     &__subitem {
         padding: 5px 2px;
         width: 10em;
+        color: #3C3C3C;
     }
 }
 

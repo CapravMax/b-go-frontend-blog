@@ -25,9 +25,9 @@ const Partnyor = ({offsetY}) => {
                         <h3>{data.page.partnership_content.block1.subtitle}</h3>
                         <p>{data.page.partnership_content.block1.form.title}</p>
                         <Form className={clsx(styles['form'])}>
-                            <Input value={name} onChange={changeName} placeholder='Имя'/>
-                            <Input value={contact} onChange={changeContact} placeholder='Контакт' />
-                            <Button>Отправить</Button>
+                            {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                            {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                            <Button>Написать</Button>
                         </Form>
                     </>
                 )}
