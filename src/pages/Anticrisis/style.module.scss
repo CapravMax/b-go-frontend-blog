@@ -6,12 +6,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 80px;
+        justify-content: space-between;
+        margin: 3rem;
         align-items: center;
 
         &__title1 {
-            max-width: 650px;
+            width: 650px;
             font-size: 1.875rem;
             line-height: 1.2;
             margin: 1rem 3rem;
@@ -22,6 +22,8 @@
                 font-size: 50px;
                 line-height: 100%;
                 color: #3C3C3C;
+                margin: 0;
+
 
 
             }
@@ -31,8 +33,9 @@
             align-items: center;
             border-radius: 30px;
             box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
-            max-width: 650px;
+            width: 475px;
             max-height: 536px;
+            margin: 3rem;
             & img{
                 border-radius: 30px;
             }
@@ -43,7 +46,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 3rem;
 
         & h2 {
@@ -54,12 +57,12 @@
             font-size: 38px;
             line-height: 120%;
             color: #3C3C3C;
-            max-width: 650px;
-            margin: 1rem 0;
+            width: 650px;
+            margin: 1rem 3rem;
             }
 
         &__list {
-            max-width: 650px;
+            width: 650px;
             list-style: none;
             font-family: 'Gotham Pro', sans-serif;
             font-style: normal;
@@ -77,13 +80,13 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 3rem;
 
         &__group {
             display: flex;
             flex-direction: column;
-            max-width: 650px;
+            width: 650px;
             margin: 3rem;
 
             & h3 {
@@ -95,7 +98,6 @@
                 color: #3C3C3C;
                 margin: 1rem 0;
             }
-
 
             &__list {
                 list-style: none;
@@ -124,12 +126,11 @@
 
         }
 
-
         &__form {
             display: flex;
             flex-direction: column;
-            max-width: 650px;
-            margin: 3rem;
+            width: 650px;
+            margin: 1rem 3rem;
 
             & h3 {
                 text-align: justify;
@@ -141,7 +142,7 @@
                 color: #3C3C3C;
                 margin: 1rem 0;
             }
-            &form{
+            & form{
                 margin: 1rem 0;
             }
 
