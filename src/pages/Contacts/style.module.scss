@@ -1,7 +1,7 @@
 .contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
@@ -9,6 +9,7 @@
         display: flex;
          flex-wrap: wrap;
         max-width: 650px;
+        margin: 0 0 0 100px;
 
         &__group {
 

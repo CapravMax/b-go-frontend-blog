@@ -235,17 +235,14 @@ export const EARTH = gql`
 query EarthPage {
   page(id: "cG9zdDoxMjMxOA==") {
     earth_content {
-      form {
-        checkbox1
-        checkbox2
-        checkbox3
-      }
+      paragraph1
       image {
-          sourceUrl
-        }
+        sourceUrl
+      }
     }
   }
 }`;
+
 export const PODKLYUCH = gql`
 query TurnKeyPage {
   page(id: "cG9zdDoxMjMzOQ==") {

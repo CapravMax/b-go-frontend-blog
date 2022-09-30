@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {useQuery} from '@apollo/client'
 import {PARTNER} from 'GraphQL/Queries'
-import Input from 'components/Input';
+// import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
 import clsx from 'clsx';
@@ -13,7 +13,7 @@ const Partnyor = ({offsetY}) => {
     const changeName = (e) => setName(prev => e.target.value) 
     const changeContact = (e) => setContact(prev => e.target.value) 
 
-    const {error, loading, data} = useQuery(PARTNER)
+    const {loading, data} = useQuery(PARTNER)
 
     useEffect(() => {}, [data])
     return (
@@ -27,7 +27,9 @@ const Partnyor = ({offsetY}) => {
                         <Form className={clsx(styles['form'])}>
                             {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
                             {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
                             <Button>Написать</Button>
+                            </a>
                         </Form>
                     </>
                 )}

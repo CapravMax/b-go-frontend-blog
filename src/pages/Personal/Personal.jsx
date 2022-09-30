@@ -79,7 +79,9 @@ const Personal = () => {
                                         <Form className={clsx(styles['form'])}>
                                                 {/*<Input placeholder='Имя'/>*/}
                                                 {/*<Input placeholder='Контакт' />*/}
-                                                <Button>Получить</Button>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform"> 
+                                            <Button>Получить</Button>
+                                            </a>
                                         </Form>
                                 </>
                             )}
@@ -105,7 +107,9 @@ const Personal = () => {
                                         <Form className={clsx(styles['form'])}>
                                                 {/*<Input placeholder='Имя'/>*/}
                                                 {/*<Input placeholder='Контакт' />*/}
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScUDMZyrNcNTYHN0-dvU3tV8gG_3F4wlmVtLr34bJOercTOQw/viewform">
                                                 <Button>Запросить</Button>
+                                            </a>
                                         </Form>
                                 </>
                             )}
@@ -130,8 +134,10 @@ const Personal = () => {
                                         <Form className={clsx(styles['form'])}>
                                                 {/*<Input placeholder='Имя'/>*/}
                                                 {/*<Input placeholder='Контакт' />*/}
-                                                <Button>Запросить</Button>
-                                        </Form>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                            <Button>Запросить</Button>
+                                            </a>
+                                </Form>
                                 </>
                             )}
                     </div>
@@ -155,7 +161,9 @@ const Personal = () => {
                                         <Form className={clsx(styles['form'])}>
                                                 {/*<Input placeholder='Имя'/>*/}
                                                 {/*<Input placeholder='Контакт' />*/}
-                                                <Button>Запросить</Button>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                            <Button>Запросить</Button>
+                                        </a>
                                         </Form>
                                 </>
                             )}

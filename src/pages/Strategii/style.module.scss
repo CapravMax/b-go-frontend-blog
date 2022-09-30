@@ -76,6 +76,9 @@
         & .form {
             // padding-left: 128px;
             max-width: 550px;
+            & a{
+                text-decoration: none;
+            }
         }
 
         & h2 {

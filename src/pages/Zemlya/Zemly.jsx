@@ -1,16 +1,15 @@
 import {useState, useEffect} from 'react';
 import {useQuery} from '@apollo/client'
 import {EARTH} from 'GraphQL/Queries'
-import Input from 'components/Input';
+// import Input from 'components/Input';
 import Button from 'components/Button';
-import InputCheckbox from 'components/InputCheckbox';
+// import InputCheckbox from 'components/InputCheckbox';
 import Form from 'components/Form';
-
 import clsx from 'clsx'
 import styles from './style.module.scss'
 
 const Zemly = () => {
-    const {error, loading, data} = useQuery(EARTH)
+    const {loading, data} = useQuery(EARTH)
 
     const [name, setName] = useState('')
     const [contact, setContact] = useState('')
@@ -21,17 +20,22 @@ const Zemly = () => {
         <div className={clsx(styles['zemlya'])}>
             <div className={clsx(styles['block__img'])} >
                 {!loading &&  (
-                        <img src={data.page.earth_content.image.sourceUrl} alt="" />
+                        <img src={data.page.earth_content.image.sourceUrl} alt="image of land" />
                 )}
             </div>
             <div className={clsx(styles['block__content'])}>
                 {!loading && (
                     <>
+                        <p className={clsx(styles['block__content__paragraph'])}>
+                            {data.page.earth_content.paragraph1}
+                        </p>
                         <Form className={clsx(styles['block__content__form'])}>
-                            {Object.entries(data.page.earth_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}
-                            <Input value={name} onChange={changeName} placeholder='Имя'/>
-                            <Input value={contact} onChange={changeContact} placeholder='Контакт' />
-                            <Button>Отправить</Button>
+                            {/*{Object.entries(data.page.earth_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}*/}
+                            {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                            {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScp4oWxukOqIdZcIoh6byduM5W1YHe91vEK94QmULNGVw-4WQ/viewform">
+                                <Button>Подобрать</Button>
+                            </a>
                         </Form>
                     </>
                 )}

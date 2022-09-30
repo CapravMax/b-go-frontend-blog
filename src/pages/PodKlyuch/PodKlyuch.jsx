@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import { useQuery } from '@apollo/client';
 import {PODKLYUCH} from 'GraphQL/Queries'
-import Input from 'components/Input';
+// import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
 import clsx from 'clsx'
@@ -61,7 +61,9 @@ const [name, setName] = useState('')
                         <Form className={clsx(styles['form'])}>
                             {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
                             {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
-                            <Button>Получить</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcQPbIwbkO6k1cd14jALGsab-uGUQbJ0JzppiwXzbaTHuWkw/viewform">
+                                <Button>Получить</Button>
+                            </a>
                         </Form>
                     </>
                 )}

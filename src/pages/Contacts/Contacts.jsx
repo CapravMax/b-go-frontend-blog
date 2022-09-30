@@ -34,7 +34,9 @@ const Contacts = () => {
                         <Form className={clsx(styles['form'])}>
                             {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
                             {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
-                            <Button>Написать</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                <Button>Написать</Button>
+                            </a>
                         </Form>
                         </div>
                     </div>

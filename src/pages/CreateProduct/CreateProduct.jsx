@@ -49,7 +49,9 @@ const CreateProduct = ({}) => {
                             {/*<Input placeholder='Имя'/>*/}
                             {/*<Input placeholder='Контакт' />*/}
                             {/*<Input placeholder='Город' />*/}
-                            <Button>Получить кейсы</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                <Button>Получить кейсы</Button>
+                            </a>
                         </Form>
                     </>
                 )}
@@ -74,7 +76,9 @@ const CreateProduct = ({}) => {
                             {/*<Input placeholder='Имя'/>*/}
                             {/*<Input placeholder='Контакт' />*/}
                             {/*<Input placeholder='Город' />*/}
-                            <Button>Запросить портфолио</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                <Button>Запросить портфолио</Button>
+                            </a>
                         </Form>
                     </>
                 )}
@@ -99,7 +103,9 @@ const CreateProduct = ({}) => {
                             {/*<Input placeholder='Имя'/>*/}
                             {/*<Input placeholder='Контакт' />*/}
                             {/*<Input placeholder='Город' />*/}
-                            <Button>Получить презентацию</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                <Button>Получить презентацию</Button>
+                            </a>
                         </Form>
                     </>
                 )}

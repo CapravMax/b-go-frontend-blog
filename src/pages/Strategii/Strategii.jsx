@@ -1,7 +1,7 @@
 import {useEffect} from 'react';
 import { useQuery } from '@apollo/client';
 import {STRATEGII} from 'GraphQL/Queries'
-import Input from 'components/Input'
+// import Input from 'components/Input'
 import Button from 'components/Button'
 import Form from 'components/Form';
 
@@ -9,7 +9,7 @@ import clsx from 'clsx';
 import styles from './style.module.scss';
 
 const Strategii = () => {
-    const {error, loading, data} = useQuery(STRATEGII)
+    const {loading, data} = useQuery(STRATEGII)
     useEffect(()=>{}, [data])
     return (
         <div className={clsx(styles['strategii'])}>
@@ -42,7 +42,9 @@ const Strategii = () => {
                         <Form className={clsx(styles['form'])}>
                             {/*<Input placeholder='Имя'/>*/}
                             {/*<Input placeholder='Контакт'/>*/}
-                            <Button>Получить</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                <Button>Получить</Button>
+                            </a>
                         </Form>
                     </>
                 )}
@@ -71,7 +73,9 @@ const Strategii = () => {
                         <Form className={clsx(styles['form'])}>
                             {/*<Input placeholder='Имя'/>*/}
                             {/*<Input placeholder='Контакт'/>*/}
-                            <Button>Получить</Button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                <Button>Получить</Button>
+                            </a>
                         </Form>
                     </>
                 )}
@@ -114,7 +118,9 @@ const Strategii = () => {
                             <Form className={clsx(styles['form'])}>
                                 {/*<Input placeholder='Имя'/>*/}
                                 {/*<Input placeholder='Контакт'/>*/}
-                                <Button>Получить</Button>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
+                                    <Button>Получить</Button>
+                                </a>
                             </Form>
                         </>
                     )}

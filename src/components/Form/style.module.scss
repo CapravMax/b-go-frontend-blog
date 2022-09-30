@@ -1,10 +1,13 @@
 .form {
     padding: 10px 0 0;
-    margin: 1rem 3rem;
+    margin: 1rem 0;
     display: inline-flex;
     flex-direction: column;
     & > * ~ button {
         margin-top: 1.5em;
         cursor: pointer;
+    }
+    & a{
+        text-decoration: none;
     }
 }
