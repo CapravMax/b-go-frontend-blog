@@ -18,18 +18,20 @@ const Zemly = () => {
     useEffect(()=>{}, [data])
     return (
         <div className={clsx(styles['zemlya'])}>
-            <div className={clsx(styles['block__img'])} >
+            <div className={clsx(styles['zemlya__block__image'])} >
                 {!loading &&  (
                         <img src={data.page.earth_content.image.sourceUrl} alt="image of land" />
                 )}
             </div>
-            <div className={clsx(styles['block__content'])}>
+            <div className={clsx(styles['zemlya__block__content'])}>
                 {!loading && (
                     <>
-                        <p className={clsx(styles['block__content__paragraph'])}>
-                            {data.page.earth_content.paragraph1}
-                        </p>
-                        <Form className={clsx(styles['block__content__form'])}>
+
+                        <ul className={clsx((styles['zemlya__block__content__list']))}>
+                            {data.page.earth_content.paragraph1.split('\n').map((x, i)=><li key={i}>{x}</li>)}
+                        </ul>
+
+                        <Form className={clsx(styles['zemlya__block__content__form'])}>
                             {/*{Object.entries(data.page.earth_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}*/}
                             {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
                             {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}

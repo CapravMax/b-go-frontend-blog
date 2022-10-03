@@ -21,6 +21,8 @@
             color: #3C3C3C;
         }
 
+
+
         &__group {
             display: flex;
             flex-direction: row;
@@ -36,6 +38,17 @@
 
                 & > * {
                 height: 100%;
+
+                    & p {
+
+                        margin: 0 3rem;
+                        font-family: "Gotham Pro L", sans-serif;
+                        font-weight: 300;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        color: #3C3C3C;
+                        text-align: justify;
+                    }
             }
         }
 

@@ -4,11 +4,12 @@ const Shop = () => {
 
 
 
-    return (
-    window.open ('https://a-morozova.ru/'))
+    return(
+    window.open ('https://a-morozova.ru/')
 
-    (window.location.href= '/')
+     (window.location.href= '/')
 
+)
 
 
 };

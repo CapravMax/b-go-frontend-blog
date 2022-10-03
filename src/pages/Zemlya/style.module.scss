@@ -1,58 +1,53 @@
 .zemlya {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    }
-.block { 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 700px;
 
-        &__paragraph{
-            font-family: 'Gotham Pro', sans-serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 36px;
-            line-height: 100%;
-            color:  #3C3C3C;
-            margin: 1rem 0;
+    &__block {
 
-
-        }
-    }
-    &__list {
-        margin: 1.5rem 0 0;
-        padding: 0;
-        list-style: none;
-        font-family: 'Gotham Pro L', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.125rem;
-        line-height: 1.5;
-        color: #3C3C3C;
-    }
-    &__img {
-        align-self: center;
-        justify-self: center;
-        max-width: 496px;
-        border-radius: 30px;
-        background-color: #F4F7FA;
-        & img {
-            max-width: 100%;
-            max-height: 536px;
-            box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
+        &__image {
+            align-self: center;
+            justify-self: center;
+            max-width: 500px;
             border-radius: 30px;
+            background-color: #F4F7FA;
+
+            & img {
+                box-shadow: 0 20px 20px 0 rgb(0 0 0 / 15%);
+                border-radius: 30px;
+            }
         }
-    }
-    &__form {
-        max-width: 650px;
-        padding: 10px 0 0;
-        margin: 1rem 3rem;
-        display: inline-flex;
-        flex-direction: column;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &__list {
+                font-family: 'Gotham Pro', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 36px;
+                line-height: 100%;
+                color: #3C3C3C;
+                margin: 1rem 0;
+                max-width: 800px;
+
+                & li {
+                   list-style: none;
+                    margin: 1rem;
+
+                }
+            }
+
+
+        }
     }
 }
+
+
+
+
+
+
 

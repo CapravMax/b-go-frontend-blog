@@ -93,6 +93,8 @@
         transition: 0.2s;
         opacity: 1;
         background:  #F4F7FA;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     &__subitem {
         position: relative;
@@ -102,7 +104,7 @@
         height: 1rem;
         overflow: hidden;
         color: #3C3C3C;
-        margin: 1rem 0;
+        margin: 1rem;
 
 
 
