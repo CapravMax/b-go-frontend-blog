@@ -6,6 +6,7 @@ import styles from'./style.module.scss'
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
+import {Link} from "react-router-dom";
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
 
     useEffect(() => {
     }, [data]);
+
 
     return (
 
@@ -101,14 +103,14 @@ const Main = () => {
                     {!loading && Object.entries(data.page.content_on_main.block2).filter(key => /service/.test(key)).map(([_, value]) => value).map(({title, description, image}, index)=>(
 
                         <div className={clsx(styles['main__block2__item'], styles[`main__block2__item--${index + 1}`])} key={index}>
-
+                            <Link to={'zemlya'}>
                             <div className={clsx(styles['main__block2__wrap'])}>
                                 <h3 className={clsx(styles['main__block2__item__title'])}>{title}</h3>
                                 <ul className={clsx(styles['main__block2__item__list'], styles['list'])}>
                                     {description.split('\n').map((x, i) => <li key={i} className={clsx(styles['list__item'])}>{x}</li>)}
                                 </ul>
                             </div>
-
+                            </Link>
                         </div>
 
                     ))}

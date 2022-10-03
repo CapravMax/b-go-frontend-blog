@@ -65,7 +65,7 @@ const [name, setName] = useState('')
                     {!loading && (
                         <>
                             <h3>{data.page.anticrisisConsalt.form.title4}</h3>
-                            <Form className={clsx(styles['form'])}>
+                            <Form className={clsx(styles['form'], styles['anticrisis__block3__form__button'])}>
                                 {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
                                 {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">

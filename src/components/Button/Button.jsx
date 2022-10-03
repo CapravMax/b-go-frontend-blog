@@ -39,57 +39,57 @@ const Button = ({children}) => {
                         }
                     },
                         {
-                        '--left-wing-third-x': 20,
-                        '--left-wing-third-y': 90,
-                        '--left-wing-second-y': 90,
-                        '--left-body-third-y': 90,
-                        '--right-wing-third-x': 80,
-                        '--right-wing-third-y': 90,
-                        '--right-body-third-y': 90,
-                        '--right-wing-second-y': 90,
-                        duration: .2
-                    },
+                            '--left-wing-third-x': 20,
+                            '--left-wing-third-y': 90,
+                            '--left-wing-second-y': 90,
+                            '--left-body-third-y': 90,
+                            '--right-wing-third-x': 80,
+                            '--right-wing-third-y': 90,
+                            '--right-body-third-y': 90,
+                            '--right-wing-second-y': 90,
+                            duration: .2
+                        },
                         {
-                        '--rotate': 50,
-                        '--left-wing-third-y': 95,
-                        '--left-wing-third-x': 27,
-                        '--right-body-third-x': 45,
-                        '--right-wing-second-x': 45,
-                        '--right-wing-third-x': 60,
-                        '--right-wing-third-y': 83,
-                        duration: .25
-                    },
+                            '--rotate': 50,
+                            '--left-wing-third-y': 95,
+                            '--left-wing-third-x': 27,
+                            '--right-body-third-x': 45,
+                            '--right-wing-second-x': 45,
+                            '--right-wing-third-x': 60,
+                            '--right-wing-third-y': 83,
+                            duration: .25
+                        },
                         {
-                        '--rotate': 60,
-                        '--plane-x': -8,
-                        '--plane-y': 40,
-                        duration: .2
-                    },
+                            '--rotate': 60,
+                            '--plane-x': -8,
+                            '--plane-y': 40,
+                            duration: .2
+                        },
                         {
-                        '--rotate': 40,
-                        '--plane-x': 45,
-                        '--plane-y': -300,
-                        '--plane-opacity': 0,
+                            '--rotate': 40,
+                            '--plane-x': 45,
+                            '--plane-y': -300,
+                            '--plane-opacity': 0,
 
-                        duration: .375,
-                        onComplete() {
-                            setTimeout(() => {
-                                button.removeAttribute('style');
-                                gsap.fromTo(button, {
-                                    opacity: 0,
-                                    y: -8
-                                }, {
-                                    opacity: 1,
-                                    y: 0,
-                                    clearProps: true,
-                                    duration: .3,
-                                    onComplete() {
-                                        button.classList.remove('active');
-                                    }
-                                })
-                            }, 1800)
-                        }
-                    }]
+                            duration: .375,
+                            onComplete() {
+                                setTimeout(() => {
+                                    button.removeAttribute('style');
+                                    gsap.fromTo(button, {
+                                        opacity: 0,
+                                        y: -8
+                                    }, {
+                                        opacity: 1,
+                                        y: 0,
+                                        clearProps: true,
+                                        duration: .3,
+                                        onComplete() {
+                                            button.classList.remove('active');
+                                        }
+                                    })
+                                }, 1800)
+                            }
+                        }]
                 })
 
                 gsap.to(button, {
