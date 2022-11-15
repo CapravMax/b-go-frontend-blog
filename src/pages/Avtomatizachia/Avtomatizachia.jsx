@@ -40,7 +40,7 @@ const Avtomatizachia = ({offsetY}) => {
                             <ul className={clsx(styles['avtomatizachia__block2__content2__list2'])}>
                                 {data.page.automatization_content.block2.list2.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                             </ul>
-                            {/*<h4><Link to={data.page.automatization_content.block2.link.url}>{data.page.automatization_content.block2.link.text}</Link></h4>*/}
+                            {<h4><Link to={data.page.automatization_content.block2.link.url}>{data.page.automatization_content.block2.link.text}</Link></h4>}
                             <Form className={clsx(styles['form'])}>
                                 {/*<Input placeholder='Имя'/>*/}
                                 {/*<Input placeholder='Контакт' />*/}

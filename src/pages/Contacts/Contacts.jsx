@@ -8,7 +8,7 @@ import Button from 'components/Button';
 import Form from 'components/Form';
 
 const Contacts = () => {
-    const {loading, data} = useQuery(CONTACT)
+    const {error, loading, data} = useQuery(CONTACT)
     useEffect(() => {
     }, [data]);
 
@@ -25,35 +25,27 @@ const Contacts = () => {
                                     <h6>{data.page.contact.block1.group.subtitle2}</h6>
                                     <p>{data.page.contact.block1.group.paragraph2}</p>
                                     <h6>{data.page.contact.block1.group.subtitle3}</h6>
-                                    <p><a href="mailto:Info@b-go.ru">{data.page.contact.block1.group.paragraph3}</a></p>
+                                    <p>{data.page.contact.block1.group.paragraph3}</p>
                                     <h6>{data.page.contact.block1.group.subtitle4}</h6>
-                                    <p><a href ="tel:+78005556105">{data.page.contact.block1.group.paragraph4}</a></p>
+                                    <p>{data.page.contact.block1.group.paragraph4}</p>
                                 </>
                             )}
-
-                        <Form className={clsx(styles['form'])}>
-                            {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
-                            {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
-                                <Button>Написать</Button>
-                            </a>
-                        </Form>
                         </div>
                     </div>
-                    {/*<div className={clsx(styles['contact__block1__form'])}>*/}
-                    {/*    {!loading && (*/}
-                    {/*        <>*/}
-                    {/*            <h5>{data.page.contact.block1.form.subtitle5}</h5>*/}
-                    {/*        </>*/}
-                    {/*    )}*/}
-                    {/*            <Form>*/}
-                    {/*                <Input placeholder='Имя'/>*/}
-                    {/*                <Input placeholder='Контакт' />*/}
-                    {/*                <Input placeholder='Город' />*/}
-                    {/*                <Button>Отправить</Button>*/}
-                    {/*            </Form>*/}
+                    <div className={clsx(styles['contact__block1__form'])}>
+                        {!loading && (
+                            <>
+                                <h5>{data.page.contact.block1.form.subtitle5}</h5>
+                            </>
+                        )}
+                             {  /*  <Form>
+                                    <Input placeholder='Имя'/>
+                                    <Input placeholder='Контакт' />
+                                    <Input placeholder='Город' />
+                                    <Button>Отправить</Button>
+                        </Form> */}
 
-                    {/*</div>*/}
+                    </div>
 
             </div>
 

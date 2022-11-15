@@ -4,7 +4,6 @@ import {ANTICRISIS} from 'GraphQL/Queries';
 import Input from 'components/Input';
 import Button from 'components/Button';
 import Form from 'components/Form';
-
 import clsx from 'clsx'
 import styles from './style.module.scss';
 
@@ -66,7 +65,7 @@ const [name, setName] = useState('')
                         <>
                             <h3>{data.page.anticrisisConsalt.form.title4}</h3>
                             <Form className={clsx(styles['form'], styles['anticrisis__block3__form__button'])}>
-                                {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
+                                {/*<Input value={name} onChange={changeName} placeholder='Имя'/>/*}
                                 {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
                                     <Button>Получить</Button>
@@ -76,8 +75,7 @@ const [name, setName] = useState('')
                     )}
                 </div>
             </div>
-
-
+                        
         </div>
     );
 };

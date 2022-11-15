@@ -13,7 +13,7 @@ const Header = () => {
             < Link to ="/" className={clsx(styles['header__logo'])}> </Link>
 
             <NavBar toggle={toggle} isOpen={isOpen} />
-            <div className={clsx(styles['menu'])}><span className={clsx(styles['menu__text'], {[styles['open']]: isOpen})} onClick={toggle}>menu</span><span className={clsx(styles['menu__btn'],{[styles['open']]: isOpen})} onClick={toggle}></span></div>
+            <div className={clsx(styles['menu'])}><span className={clsx(styles['menu__text'], {[styles['open']]: isOpen})} onClick={toggle}>+7 800 555 61 05</span><span className={clsx(styles['menu__btn'],{[styles['open']]: isOpen})} onClick={toggle}></span></div>
         </div>
     );
 };

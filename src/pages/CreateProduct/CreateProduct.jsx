@@ -44,11 +44,11 @@ const CreateProduct = ({}) => {
                         <ul className={clsx(styles['product__block2__content2__list2'])}>
                             {data.page.product_creation_content.block2.list.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
-                        {/*<h4>{data.page.product_creation_content.block2.form.title}</h4>*/}
+                        {<h4>{data.page.product_creation_content.block2.form.title}</h4>}
                         <Form>
-                            {/*<Input placeholder='Имя'/>*/}
-                            {/*<Input placeholder='Контакт' />*/}
-                            {/*<Input placeholder='Город' />*/}
+                            {<Input placeholder='Имя'/>}
+                            {<Input placeholder='Контакт' />}
+                            {<Input placeholder='Город' />}
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
                                 <Button>Получить кейсы</Button>
                             </a>
@@ -71,11 +71,11 @@ const CreateProduct = ({}) => {
                         <ul className={clsx((styles['product__block3__content3__list3']))}>
                             {data.page.product_creation_content.block3.list.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
-                        {/*<h4>{data.page.product_creation_content.block3.form.title}</h4>*/}
+                        {<h4>{data.page.product_creation_content.block3.form.title}</h4>}
                         <Form>
-                            {/*<Input placeholder='Имя'/>*/}
-                            {/*<Input placeholder='Контакт' />*/}
-                            {/*<Input placeholder='Город' />*/}
+                            {<Input placeholder='Имя'/>}
+                            {<Input placeholder='Контакт' />}
+                            {<Input placeholder='Город' />}
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5BIF4KG41KU5n153xW6uMQ7Etbd9rf3iVa9A-Tjma1ZxbNw/viewform">
                                 <Button>Запросить портфолио</Button>
                             </a>
@@ -98,7 +98,7 @@ const CreateProduct = ({}) => {
                         <ul className={clsx(styles['product__block4__content4__list4'])}>
                             {data.page.product_creation_content.block4.list.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
-                        {/*<h4>{data.page.product_creation_content.block4.form.title}</h4>*/}
+                        {<h4>{data.page.product_creation_content.block4.form.title}</h4>}
                         <Form>
                             {/*<Input placeholder='Имя'/>*/}
                             {/*<Input placeholder='Контакт' />*/}

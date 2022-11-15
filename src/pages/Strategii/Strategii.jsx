@@ -1,7 +1,7 @@
 import {useEffect} from 'react';
 import { useQuery } from '@apollo/client';
 import {STRATEGII} from 'GraphQL/Queries'
-// import Input from 'components/Input'
+import Input from 'components/Input'
 import Button from 'components/Button'
 import Form from 'components/Form';
 

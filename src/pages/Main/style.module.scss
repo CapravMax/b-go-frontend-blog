@@ -287,7 +287,9 @@
             box-shadow: 10px 14px 20px rgba(191, 192, 207, 0.16);
             border-radius: 20px;
             margin-bottom: 20px;
-            max-width: 1416px;
+            max-width: 1400px;
+            width:1400px;
+            margin: 0 auto;
 
             & h3 {
                 font-family: 'Gotham Pro', sans-serif;
@@ -306,7 +308,9 @@
                 font-weight: 400;
                 font-size: 26px;
                 line-height: 130%;
-                max-width: 800px;
+                max-width: 1600px;
+                width: 1600px;
+                margin: 0 auto;
 
                 & li {
                     color: #0F76E8;
@@ -332,6 +336,7 @@
             border-radius: 20px;
             margin-bottom: 20px;
             max-width: 1416px;
+            margin: 0 auto;
 
 
             & h3 {
@@ -350,7 +355,8 @@
                 font-weight: 400;
                 font-size: 26px;
                 line-height: 130%;
-                max-width: 800px;
+                max-width: 1400px;
+                width: 1400px;
 
 
                 & li {

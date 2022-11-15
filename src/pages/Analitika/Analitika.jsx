@@ -72,6 +72,8 @@ const Analitika = () => {
                 {!loading && (
                   <>
                        <h4>{data.page.analytics_content.form.title}</h4>
+
+                       
                         <Form className={clsx(styles['form'])} >
                             {/*{Object.entries(data.page.analytics_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}*/}
 

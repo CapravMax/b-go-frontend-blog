@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react';
 import {useQuery} from '@apollo/client'
 import {EARTH} from 'GraphQL/Queries'
-// import Input from 'components/Input';
+ import Input from 'components/Input';
 import Button from 'components/Button';
-// import InputCheckbox from 'components/InputCheckbox';
+ import InputCheckbox from 'components/InputCheckbox';
 import Form from 'components/Form';
 import clsx from 'clsx'
 import styles from './style.module.scss'
@@ -31,7 +31,7 @@ const Zemly = () => {
                             {data.page.earth_content.paragraph1.split('\n').map((x, i)=><li key={i}>{x}</li>)}
                         </ul>
 
-                        <Form className={clsx(styles['zemlya__block__content__form'])}>
+                      <Form className={clsx(styles['zemlya__block__content__form'])}>
                             {/*{Object.entries(data.page.earth_content.form).filter(key => /checkbox/.test(key)).map(([_, value], key) => <InputCheckbox key={key}>{value}</InputCheckbox>)}*/}
                             {/*<Input value={name} onChange={changeName} placeholder='Имя'/>*/}
                             {/*<Input value={contact} onChange={changeContact} placeholder='Контакт' />*/}
